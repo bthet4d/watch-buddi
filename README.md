@@ -1,8 +1,7 @@
 # watch-buddi
 
 ## Description
-
-
+curated media content for pet people
 
 ## Prerequisites
 
@@ -14,16 +13,16 @@ Before you begin, ensure you have the following installed:
 
 ## Getting Started
 
-1. Clone this repository:
+Clone this repository:
 
    ```bash
    git clone https://github.com/bthet4d/watch-buddi
 
 ## Install dependencies:
-2. npm install
+npm install
 
 ## Build Tailwind CSS:
-3. npm run build:css
+npm run build:css
 
 ## Open index.html in your browser
 
