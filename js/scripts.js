@@ -1,6 +1,45 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        let formData = {};
+        for (element of contactForm.elements) {
+            // Check if the element is an input/select/textarea and not a button
+            if (element.tagName !== 'BUTTON' && element.name) {
+                // For select elements, handle multiple options
+                if (element.type === 'select-multiple') {
+                    formData[element.name] = Array.from(element.selectedOptions).map(option => option.value);
+                } else {
+                    formData[element.name] = element.value;
+                }
+            }
+        }
+        console.log('Form Data ', formData);
+        contactForm.reset(); 
+        try {
+            
+            const response = await fetch('/server-endpoint', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+    
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+    
+            const data = await response.json();
+            console.log('Server Response:', data);
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    });
+    
 
     function focusFormInput () {
         const inputElement = document.getElementById('firstName');
