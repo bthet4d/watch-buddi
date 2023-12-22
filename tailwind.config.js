@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'primany': ['Quicksand', 'sans-serif'],
-        'secondary': ['Kiona', 'sans-serif']
+        "qs": ['Quicksand', 'sans-serif'],
+        "grotesk": ['Familjen+Grotesk', 'sans-serif']
         
       },
       colors: {
@@ -15,6 +15,13 @@ export default {
         'background-a': '#FFEB87',
         'background-b': '#F2D8B3',
         'accent-c': '#724F41'
+      },
+      backgroundImage: {
+        'hero': "url('../images/fourPuppies_compressedYellow.jpg')",
+        'cta_a': "url('../images/cuteCat_compressedYellow.jpg')",
+        'cta_b': "url('../images/kittenOnDog_compressedYellow.jpg')",
+        'cta_c': "url('../images/walkingDogByWater_compressedYellow.jpg')"
+
       }
     },
   },

@@ -2,43 +2,46 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        let formData = {};
-        for (element of contactForm.elements) {
-            // Check if the element is an input/select/textarea and not a button
-            if (element.tagName !== 'BUTTON' && element.name) {
-                // For select elements, handle multiple options
-                if (element.type === 'select-multiple') {
-                    formData[element.name] = Array.from(element.selectedOptions).map(option => option.value);
-                } else {
-                    formData[element.name] = element.value;
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+    
+            let formData = {};
+            for (element of contactForm.elements) {
+                // Check if the element is an input/select/textarea and not a button
+                if (element.tagName !== 'BUTTON' && element.name) {
+                    // For select elements, handle multiple options
+                    if (element.type === 'select-multiple') {
+                        formData[element.name] = Array.from(element.selectedOptions).map(option => option.value);
+                    } else {
+                        formData[element.name] = element.value;
+                    }
                 }
             }
-        }
-        console.log('Form Data ', formData);
-        contactForm.reset(); 
-        try {
-            
-            const response = await fetch('/server-endpoint', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-    
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
+            console.log('Form Data ', formData);
+            contactForm.reset(); 
+            try {
+                
+                const response = await fetch('/server-endpoint', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                });
+        
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+        
+                const data = await response.json();
+                console.log('Server Response:', data);
+            } catch (error) {
+                console.error('Error:', error);
             }
+        });
+    }
     
-            const data = await response.json();
-            console.log('Server Response:', data);
-        } catch (error) {
-            console.error('Error:', error);
-        }
-    });
     
 
     function focusFormInput () {
@@ -48,20 +51,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     
-    let learnMore = document.getElementById('learnMoreLink');
-    learnMore.addEventListener('click', () => focusFormInput());
+    // let learnMore = document.getElementById('learnMoreLink');
+    // learnMore.addEventListener('click', () => focusFormInput());
     
-    let clickHereLink = document.getElementById('clickHereLink');
-    clickHereLink.addEventListener('click', () => focusFormInput());
+    // let clickHereLink = document.getElementById('clickHereLink');
+    // clickHereLink.addEventListener('click', () => focusFormInput());
     
-    let navLink = document.getElementById('navLink');
-    navLink.addEventListener('click', () => focusFormInput());
+    // let navLink = document.getElementById('navLink');
+    // navLink.addEventListener('click', () => focusFormInput());
     
-    let heroLink = document.getElementById('heroLink');
-    heroLink.addEventListener('click', () => focusFormInput());
+    // let heroLink = document.getElementById('heroLink');
+    // heroLink.addEventListener('click', () => focusFormInput());
     
-    let contactLink = document.getElementById('ctaLink');
-    contactLink.addEventListener('click', () => focusFormInput());
+    // let contactLink = document.getElementById('ctaLink');
+    // contactLink.addEventListener('click', () => focusFormInput());
     // target date
     const countDownDate = new Date("March 23, 2024 00:00:00").getTime();
     const now = new Date().getTime();
