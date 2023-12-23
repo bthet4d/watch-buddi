@@ -50,21 +50,41 @@ document.addEventListener("DOMContentLoaded", () => {
             inputElement.focus();
         }
     }
+
+    let navLink = document.getElementById('navLink');
+    if (navLink) {
+        navLink.addEventListener('click', () => focusFormInput());
+    }
+
+    let heroLink = document.getElementById('heroLink');
+    if (heroLink) {
+        heroLink.addEventListener('click', () => focusFormInput());
+    }
+
+    let signUp = document.getElementById('signUpLink');
+    if (signUp) {
+        signUp.addEventListener('click', () => focusFormInput());
+    }
+
+    let startHere = document.getElementById('getStartedLink');
+    if (startHere) {
+        startHere.addEventListener('click', () => focusFormInput());
+    }
+
+    let learnMore = document.getElementById('learnMoreLink');
+    if (learnMore) {
+        learnMore.addEventListener('click', () => focusFormInput());
+    }
     
-    // let learnMore = document.getElementById('learnMoreLink');
-    // learnMore.addEventListener('click', () => focusFormInput());
     
-    // let clickHereLink = document.getElementById('clickHereLink');
-    // clickHereLink.addEventListener('click', () => focusFormInput());
     
-    // let navLink = document.getElementById('navLink');
-    // navLink.addEventListener('click', () => focusFormInput());
     
-    // let heroLink = document.getElementById('heroLink');
-    // heroLink.addEventListener('click', () => focusFormInput());
     
-    // let contactLink = document.getElementById('ctaLink');
-    // contactLink.addEventListener('click', () => focusFormInput());
+
+    let contactLink = document.getElementById('ctaLink');
+    if (contactLink) {
+        contactLink.addEventListener('click', () => focusFormInput());
+    }
     // target date
     const countDownDate = new Date("March 23, 2024 00:00:00").getTime();
     const now = new Date().getTime();

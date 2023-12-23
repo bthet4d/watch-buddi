@@ -17,10 +17,11 @@ export default {
         'accent-c': '#724F41'
       },
       backgroundImage: {
-        'hero': "url('../images/fourPuppies_compressedYellow.jpg')",
-        'cta_a': "url('../images/cuteCat_compressedYellow.jpg')",
-        'cta_b': "url('../images/kittenOnDog_compressedYellow.jpg')",
-        'cta_c': "url('../images/walkingDogByWater_compressedYellow.jpg')"
+        'hero': "url('../images/landscape/fourPuppies_landscape.jpg')",
+        'cta_a': "url('../images/landscape/basketKittens_landscape.jpg')",
+        'cta_b': "url('../images/landscape/coupleHoldingDogs_landscape.jpg')",
+        'cta_c': "url('../images/landscape/washbowlKittens_landscape.jpg')",
+        'cta_d': "url('../images/landscape/manPlayingWithDog.jpg')"
 
       }
     },
