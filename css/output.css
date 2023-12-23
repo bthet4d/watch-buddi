@@ -599,10 +599,6 @@ video {
   left: 0px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -725,10 +721,6 @@ video {
 
 .aspect-auto {
   aspect-ratio: auto;
-}
-
-.h-5\/6 {
-  height: 83.333333%;
 }
 
 .h-64 {
@@ -954,10 +946,6 @@ video {
 
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.bg-hero {
-  background-image: url('../images/landscape/fourPuppies_landscape.jpg');
 }
 
 .from-accent-b {
@@ -1262,6 +1250,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:-top-2 {
+    top: -0.5rem;
+  }
+
   .sm\:m-2 {
     margin: 0.5rem;
   }
@@ -1281,6 +1273,10 @@ video {
 
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:bg-hero-mobile {
+    background-image: url('../images/landscape/fourPuppies_mobile.jpg');
   }
 
   .sm\:text-2xl {
@@ -1377,6 +1373,18 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .lg\:left-0 {
+    left: 0px;
+  }
+
+  .lg\:right-0 {
+    right: 0px;
+  }
+
   .lg\:m-16 {
     margin: 4rem;
   }
@@ -1398,12 +1406,24 @@ video {
     margin-top: 8rem;
   }
 
+  .lg\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .lg\:h-5\/6 {
+    height: 83.333333%;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
 
   .lg\:w-3\/4 {
     width: 75%;
+  }
+
+  .lg\:bg-hero-big {
+    background-image: url('../images/landscape/fourPuppies_landscape.jpg');
   }
 
   .lg\:text-2xl {
