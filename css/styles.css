@@ -35,3 +35,231 @@
           scrollbar-width: none;  /* Firefox */
     }
   }
+
+
+
+
+
+
+  
+
+
+
+
+/* Default styles for all devices */
+#heroBackground {
+    background-image: url('../images/background/fourPuppies_med.jpg');
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+
+}
+
+
+
+#cta-one {
+    background-image: url('../images/background/coupleWithPuppies_medium.jpg;');
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+#cta-two {
+    background-image: url('../images/background/kittensInBasket_medium.jpg');
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+
+}
+
+#cta-three {
+    background-image: url('../images/background/manPlayingWithDog_medium.jpg');
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+
+}
+
+#cta-four {
+    background-image: url('../images/background/kittensInWashbowl_medium.jpg');
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+
+}
+
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+    /* Styles for phones */
+    #heroBackground {
+        background-image: url('../images/background/fourPuppies_xs.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+
+    #cta-one {
+        background-image: url('../images/background/coupleWithPuppies_small.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+
+    #cta-two {
+        background-image: url('../images/background/kittensInBasket_small.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+    
+    #cta-three {
+        background-image: url('../images/background/manPlayingWithDog_small.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+    
+    #cta-four {
+        background-image: url('../images/background/kittensInWashbowl_small.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+}
+
+/* Small devices (tablets) */
+@media (min-width: 576px) and (max-width: 768px) {
+    #heroBackground {
+        background-image: url('../images/background/fourPuppies_xs.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+
+    #cta-one {
+        background-image: url('../images/background/coupleWithPuppies_small.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+
+    #cta-two {
+        background-image: url('../images/background/kittensInBasket_small.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+    
+    #cta-three {
+        background-image: url('../images/background/manPlayingWithDog_small.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+    
+    #cta-four {
+        background-image: url('../images/background/kittensInWashbowl_small.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+}
+
+/* Medium devices (laptops) */
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Styles for laptops */
+    #heroBackground {
+        background-image: url('../images/background/fourPuppies_med.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+
+    #cta-one {
+        background-image: url('../images/background/coupleWithPuppies_medium.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+
+    #cta-two {
+        background-image: url('../images/background/kittensInBasket_medium.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+    
+    #cta-three {
+        background-image: url('../images/background/manPlayingWithDog_medium.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+    
+    #cta-four {
+        background-image: url('../images/background/kittensInWashbowl_medium.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) {
+    /* Styles for desktops */
+    #heroBackground {
+        background-image: url('../images/background/fourPuppies_large.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+
+    #cta-one {
+        background-image: url('../images/background/coupleWithPuppies_large.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+
+    #cta-two {
+        background-image: url('../images/background/kittensInBasket_large.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+    
+    #cta-three {
+        background-image: url('../images/background/manPlayingWithDog_large.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+    
+    #cta-four {
+        background-image: url('../images/background/kittensInWashbowl_large.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+    }
+}

@@ -76,11 +76,6 @@ document.addEventListener("DOMContentLoaded", () => {
         learnMore.addEventListener('click', () => focusFormInput());
     }
     
-    
-    
-    
-    
-
     let contactLink = document.getElementById('ctaLink');
     if (contactLink) {
         contactLink.addEventListener('click', () => focusFormInput());
@@ -107,9 +102,9 @@ document.addEventListener("DOMContentLoaded", () => {
         let minutes = document.getElementById('minutes');
         let seconds = document.getElementById('seconds');
 
-        days.innerHTML = remainingDays.toString() + ' days - ';
-        hours.innerHTML = remainingHours < 10 ? '0' + remainingHours.toString() + ' hours - ' : remainingHours.toString() + ' hours - ';
-        minutes.innerHTML = remainingMinutes < 10 ? '0' + remainingMinutes.toString() + ' min - ' : remainingMinutes.toString() + ' min - ';
+        days.innerHTML = remainingDays.toString() + ' days -';
+        hours.innerHTML = remainingHours < 10 ? '0' + remainingHours.toString() + ' hours -' : remainingHours.toString() + ' hours -';
+        minutes.innerHTML = remainingMinutes < 10 ? '0' + remainingMinutes.toString() + ' min -' : remainingMinutes.toString() + ' min -';
         seconds.innerHTML = remainingSeconds < 10 ? '0' + remainingSeconds.toString() + ' sec': remainingSeconds.toString() + ' sec';
     }
 
