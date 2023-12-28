@@ -37,10 +37,33 @@
   }
 
 
+  .image-item {
+    min-width: 200px; /* Set a minimum width for each image */
+    height: 100%; /* Set the height as needed */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    margin-right: 10px; /* Add margin between images */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
 
 
 
+
+#headerLogo {
+    background-image: url('../images/logos/buddi_transp_large_cropped');
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+}
   
 
 
@@ -55,10 +78,24 @@
 
 }
 
+#heroBackgroundTwo {
+    background-image: url('../images/background/terrier_medium.jpg');
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
 
+}
+
+#heroBackgroundThree {
+    background-image: url('../images/background/dogOnRoad_medium.jpg');
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+
+}
 
 #cta-one {
-    background-image: url('../images/background/coupleWithPuppies_medium.jpg;');
+    background-image: url('../images/background/coupleWithPuppies_medium.jpg');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -92,12 +129,35 @@
 /* Extra small devices (phones) */
 @media (max-width: 576px) {
     /* Styles for phones */
+    #headerLogo {
+        background-image: url('../images/logos/buddi_transp_small_cropped.png');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    }
+
     #heroBackground {
         background-image: url('../images/background/fourPuppies_xs.jpg');
         max-width: 100%;
         height: auto;
         background-repeat: no-repeat;
 
+    }
+
+    #heroBackgroundTwo {
+        background-image: url('../images/background/terrier_small.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    
+    }
+
+    #heroBackgroundThree {
+        background-image: url('../images/background/dogOnRoad_small.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    
     }
 
     #cta-one {
@@ -135,12 +195,35 @@
 
 /* Small devices (tablets) */
 @media (min-width: 576px) and (max-width: 768px) {
+    #headerLogo {
+        background-image: url('../images/logos/buddi_transp_small_cropped.png');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    }
+
     #heroBackground {
         background-image: url('../images/background/fourPuppies_xs.jpg');
         max-width: 100%;
         height: auto;
         background-repeat: no-repeat;
 
+    }
+
+    #heroBackgroundTwo {
+        background-image: url('../images/background/terrier_small.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    
+    }
+
+    #heroBackgroundThree {
+        background-image: url('../images/background/dogOnRoad_small.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    
     }
 
     #cta-one {
@@ -174,6 +257,13 @@
         background-repeat: no-repeat;
 
     }
+
+    #libaryCollage {
+        background-image: url('../images/deviceMedia/LibrarCollage.tif');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    }
 }
 
 /* Medium devices (laptops) */
@@ -185,6 +275,22 @@
         height: auto;
         background-repeat: no-repeat;
 
+    }
+
+    #heroBackgroundTwo {
+        background-image: url('../images/background/terrier_medium.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    
+    }
+
+    #heroBackgroundThree {
+        background-image: url('../images/background/dogOnRoad_medium.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    
     }
 
     #cta-one {
@@ -229,6 +335,22 @@
         height: auto;
         background-repeat: no-repeat;
 
+    }
+
+    #heroBackgroundTwo {
+        background-image: url('../images/background/terrier_large.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    
+    }
+
+    #heroBackgroundThree {
+        background-image: url('../images/background/dogOnDirtRoad_large.jpg');
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    
     }
 
     #cta-one {

@@ -13,166 +13,196 @@
     <title>Watch buddi</title>
     <link rel="stylesheet" href="css/output.css">
   </head>
-  <body class="h-full w-full bg-background-a text-accent-a font-qs">
+  <body class="h-full w-full bg-gradient-to-br from-white to-background-b text-accent-a font-qs">
     <div class="container mx-auto">
         
-        <nav class="font-qs p-4">
-            <div class=" mx-auto flex items-center justify-between lg:mt-4 :mb-4 text-accent-a">
-            <img src="images/buddi_trasparentMedium.png" alt="" width="300" height="169" loading="lazy" decoding="async">
+        <div class="font-qs p-4">
+            <div class=" mx-auto flex-col lg:flex md:flex sm:flex-col items-center  lg:mt-4 :mb-4 text-accent-a">
+                
+                <!-- TODO 
+                    - NEED TO USE DIFFERENT IMAGES BASED ON 
+                    - NEED A HAMBURGER MENU FOR THE SMALL SCREENS
+                    - the images in the image scroll need margins between them on the x-axis
+                    -- need to review the word document one more time and get all text on the page
+                    -- use midjourney to get line drawing in chosen color of cat eyes and or paws
+                 -->
+                
+                <div class="flex justify-center items-center mb-4">
+                    <!-- Medium and Large Screens -->
+                    <img src="images/logos/buddi_transp_small_cropped.png" alt="Medium Logo" class="lg:block hidden " />
 
-            <br>
-            <ul class="hidden md:flex space-x-4 md-text-xl lg:text-3xl">
-                <li class="rounded pt-2 pb-2 pl-4 pr-4">
-                    <a href="#videos" class="cursor-pointer">Videos</a>
-                </li>
-                <li class="rounded pt-2 pb-2 pl-4 pr-4">
-                <a id="navLink" class="cursor-pointer">Newsletter</a>
-                </li>
-                <li class="rounded pt-2 pb-2 pl-4 pr-4">
-                <a href="#followUs" class="cursor-pointer">Social Media</a>
-                </li>
-            </ul>
-            </div>
-        </nav>
+                    <!-- Small Screens -->
+                    <img src="images/logos/buddi_transp_xs.png" alt="Small Logo" class="block lg:hidden " />
+                </div>
+                
 
-        <div class="relative w-full h-screen text-white">
-            <div id="heroBackground" class="w-full absolute inset-0 bg-cover bg-center"></div>
-
-            <div id="hero" class="absolute inset-0 flex items-center justify-center z-10 text-white">
-                <div class="absolute md:w-3/4 sm:w-full h-auto flex flex-col items-center justify-center top-0 rounded-sm bg-accent-c/50 mt-8 md:p8 sm:p4">
-                    <div id="heroOverlay" class="relative flex flex-col w-full h-full items-center justify-center p-4">
-                        <div class="flex justify-center items-center lg:m-16 md:m-8 sm:m-2">
-                            <div class="flex items-center border-b-4 border-t-4 border-background-a">
-                                <h1 class="text-4xl p-4">Fetching content for pet people!</h1>
-                            </div>
-                        </div>
-                        <p class="my-4 mx-4 overflow-wrap sm:text-lg md:text-2xl">
-                            Are you endlessly scrolling? At buddi, we fetch content just for pet people, so you can enjoy watching the best entertaining, family-friendly movies and TV shows ...<br>
-                            <span class="text-2xl text-background-a">with NO COMMERCIALS!</span>
-                        </p>
+                <div class="flex justify-center items-center lg:mx-16 md:mx-8 sm:mx-4">
+                    <div class="flex items-center border-b-4 border-t-4 border-background-a">
+                        <h1 class="text-xl font-semibold sm:font-extrabold lg:text-4xl p-4 overflow-wrap">Fetching content for pet people!</h1>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="flex flex-col items-center text-center p-4">
-            <div class="flex flex-col mt-8 pb-8 items-center justify-center">
-                <div class="flex mt-4 mb-4 ">
-                    <p class="lg:text-3xl md:text-xl sm:text-lg font-bold text-accent-a font-grotesk">buddi arrives on this website and mobile app stores on National Puppy Day, March 23, 2024!</p>
+                
 
+                <div class="flex">
+                    <ul class="flex space-x-4 md-text-xl lg:text-3xl">
+                        <li class="rounded p-2">
+                            <a href="#videos" class="cursor-pointer">Videos</a>
+                        </li>
+                        <li class="rounded p-2">
+                        <a id="navLink" class="cursor-pointer">Newsletter</a>
+                        </li>
+                        <li class="rounded p-2">
+                        <a href="#followUs" class="cursor-pointer">Social Media</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="flex mt-4 mb-4">
-                    <a id="signUpLink" class="bg-accent-b inline-block rounded-sm px-2 py-2 w-auto text-white cursor-pointer">
-                        Sign Up Now
-                    </a>
-                </div>
-
                 
             </div>
         </div>
-        <div id="timer" class="flex justify-center items-center text-center text-accent-a font-qs font-extrabold">
-            <div class="flex min-h-full mb-16 lg:text-4xl md:text-2xl sm:text-xl">
-            <div class="p-1.5 mr-4 rounded-box">
-                <span class="countdown ">
-                <span id="days"></span>
-                </span>
-            </div>
-            <div class="p-1.5 mr-4 rounded-box">
-                <span class="countdown ">
-                <span id="hours"></span>
-                </span>
-            </div>
-            <div class="p-1.5 mr-4 rounded-box">
-                <span class="countdown ">
-                <span id="minutes"></span>
-                </span>
-            </div>
-            <div class="p-1.5 mr-4 rounded-box">
-                <span class="countdown ">
-                <span id="seconds"></span>
-                </span>
-            </div>
-            </div>
-        </div>
-        <div class="flex relative w-full h-screen text-white my-4">
-            <div id="cta-one" class="absolute inset-0 bg-cover bg-center"></div>
-            <div class="absolute top-0 lg:right-0 lg:top-0 p-6 md:w-1/4 sm:w-1/2 md:h-full sm:h-1/2 bg-accent-a/75 ">
-                <div class="flex flex-col text-center justify-center">
-                    <p class="overflow-wrap sm:text-lg md:text-xl lg:text-2xl">
-                        buddi has curated movies, documentaries, TV shows, and hit youtubers for people who love pets. Content by <span class="text-background-a">pet people</span>, for <span class="text-background-a">pet people</span>.
-                    </p>
-                    <div class="flex w-auto justify-center items-center mt-4 text-lg">
-                        <a id="getStartedLink" class="bg-accent-b inline-block rounded-sm px-2 py-2 w-auto text-white cursor-pointer">
-                            Get Started
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         
-        <div class="flex relative w-full h-screen text-white my-4">
-            <div id="cta-two" class="absolute inset-0 bg-cover bg-center"></div>
-            <div class="absolute top-0 lg:left-0 lg:top-0 p-6 md:w-1/4 sm:w-1/2 md:h-full sm:h-1/2 bg-accent-a/75 ">
-                <div class="flex flex-col text-center justify-center">
-                    <p class="overflow-wrap sm:text-lg md:text-xl lg:text-2xl">
-                        Whether you want to watch videos on demand, prefer to sit back and watch one of our 24/7 streaming channels, or watch one of the live webcams, buddi lets you experience our content in the way you prefer.
-                    </p>
-                    <div class="flex w-auto justify-center items-center mt-4 text-lg">
+        <div class="relative w-full h-screen text-white">
+            <div id="heroBackgroundThree" class="w-full absolute inset-0 bg-cover bg-center"></div>
+
+            <div id="hero" class="absolute inset-0 flex items-center justify-center z-10 text-white">
+                <div class="absolute md:w-3/4 sm:w-full h-auto flex flex-col items-center justify-center top-0 rounded-sm bg-accent-c/50 mt-8 mx-4 md:p8 sm:p4">
+                    <div id="heroOverlay" class="relative flex items-center border-l-4 border-r-4 border-background-a ">
                         
-                        <a id="learnMoreLink" class="bg-accent-b inline-block rounded-sm px-2 py-2 w-auto text-white cursor-pointer">
-                            Learn More
+                        <p class="my-4 mx-4 overflow-wrap sm:text-lg md:text-2xl">
+                            Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
+                        </p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+    <div class=" flex justify-center items-center overflow-hidden p-4">
+
+        <div class=" inset-y-0 left-0 flex items-center justify-center z-10 mr-2">
+            <svg id="image-scroll-left" class="w-8 h-8 cursor-pointer bg-transparent text-accent-b" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </div>
+
+        <div id="imageScroll" class="flex snap-x scroll scroll-smooth w-full overflow-x-auto relative items-start justify-start lg:items-center lg:justify-center">
+            
+            <div class="scroll snap-center mx-2 flex items-center">
+                <img src="images/deviceMedia/Kid_Tablet.png" alt="Childs Tablet" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
+            </div>
+            <div class="scroll snap-center mx-2 flex items-center">
+                <img src="images/deviceMedia/Tablet.png" alt="Tablet" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
+            </div>
+            <div class="scroll snap-center mx-2 flex items-center">
+                <img src="images/deviceMedia/TV_family.png" alt="Family TV" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
+            </div>
+            
+        </div>
+
+        <div class=" inset-y-0 right-0 flex items-center justify-center z-10 ml-2">
+            <svg id="image-scroll-right" class="w-8 h-8 cursor-pointer bg-transparent text-accent-b" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </div>
+    </div>
+
+
+        
+
+
+        
+
+    
+        <div class="flex flex-col">
+            <div class="flex flex-col items-center text-center p-4">
+                <div class="flex flex-col mt-8 pb-8 items-center justify-center">
+                    <div class="flex mt-4 mb-4 ">
+                        <p class="lg:text-3xl md:text-xl sm:text-lg font-bold text-accent-a font-grotesk">buddi arrives on this website and mobile app stores on National Puppy Day, March 23, 2024!</p>
+                    </div>
+                    <div class="flex mt-4 mb-4">
+                        <a id="signUpLink" class="bg-accent-b inline-block rounded-sm px-2 py-2 w-auto text-white cursor-pointer">
+                            Sign Up Now
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="flex w-full my-8">
+                
+                <a data-type="countdown" data-id="4732491" class="tickcounter" style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto;" title="Buddi Launch" href="//www.tickcounter.com/">Buddi Launch</a>
+            </div>
             
-        <div class="relative w-full h-screen my-8 text-white">
+        </div>
+
+        <div class="relative w-full h-auto text-white my-8">
+            <!-- <div id="libraryCollage" class="w-full absolute inset-0 bg-cover bg-center"> -->
+                <div class="flex justify-center items-center">
+                    <p class="text-accent-a text-4xl">Collage WIP</p>
+                </div>
+                
+            <!-- </div> -->
+        </div>
+    
+            
+        <div class="relative w-full h-screen text-white">
             <div id="cta-three" class="absolute inset-0 flex items-center justify-center bg-cover bg-center "></div>
             <div id="buddiContent" class="absolute inset-0 flex items-center justify-center z-10 lg:mx-16 md:mx-8 sm:mx-4 ">
                 <div class="absolute md:w-3/4 sm:w-1/2 h-auto flex flex-col items-center justify-center top-0 rounded-sm bg-accent-c/50 md:p8 sm:p4">
                     <div class="relative flex flex-col w-full h-full items-center justify-center p-2">
                         <div class="flex justify-center items-center lg:m-8 md:m-4 sm:m-2">
                             <div class="flex flex-col sm:flex:col items-center border-b-4 border-t-4 border-background-a">
-                                <div class="flex">
-                                    <img src="images/buddi_transp_small.png" alt="" width="200" height="106" loading="lazy" decoding="async">
+                                <div class="flex p-4">
+                                    <img src="images/logos/buddi_transp_small_cropped.png" alt=""  loading="lazy" decoding="async">
 
-                                </div>
-                                <div class="flex mt-0 pt-0 lg:mb-4 sm:mb-2">
-                                    <h1 class="md:text-4xl sm:text-2xl">ORIGINALS</h1>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex">
-                            <p class="overflow-wrap sm:text-lg md:text-2xl p-8">
-                                Development and production has begun creating original exclusive content for buddi. We&apos;re dedicated to creating specials, documentaries, TV series, podcasts, and movies that will <span class="text-background-a">inform, entertain</span>, and <span class="text-background-a">educate</span>. We are pet people, making content for pet people.
+                        <div class="flex-col p-4">
+                            <p class="overflow-wrap lg:text-2xl md:text-2xl sm:text-xl">
+                                Movies, TV Shows, Live Cams, <span class="text-background-a">24/7 Steaming Channels</span>. Content <span class="text-background-a">by pet people</span> for <span class="text-background-a">people!</span> Family friendly & commercial free!
                             </p>
+                            <div class="flex text-center justify-center mt-2">
+                                <p class="overflow-wrap text-4xl text-background-b font-bold">
+                                    only $7.99 a month or $79 a year!
+                                </p>
+                            </div>
+                            
                         </div>
-                        
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="relative w-full h-auto text-white my-8">
+            <div class="flex justify-center items-center">
+                <p class="text-accent-a text-4xl">Sizzle Reel WIP</p>
+            </div>
+        </div>
         
-        <div class="flex flex-col justify-center items-center mb-8 bold">
-            <div class="flex flex-col items-center justify-center lg:w-1/2 sm:w-full m-8 text-accent-c">
-                <h2 class="text-accent-a text-2xl">Contact Us</h2>
+        
+        <div class="flex flex-col justify-center items-center bold w-full ">
+            <div class="flex mx-2">
+                <p class="text-xl md:text-42xl lg:text-4xl font-bold text-accent-b font-grotesk">Sign up for a newsletter from buddi for exclusive content, discounts, and updates about the newest one-stop, personalized app for people who love pets.</p>
+
+            </div>
+            <div class="flex flex-col items-center justify-center text-accent-c w-full px-2 py-2 mb-8">
+                <h2 class="text-2xl text-accent-a">Contact Us</h2>
                 <br>
-                <form id="contactForm" class="w-full m-4 lg:text-xl sm:text-lg" >
+                <form id="contactForm" class="w-full lg:w-1/2 md:w-1/2 sm:w-full lg:text-xl md:text-lg sm:text-lg">
                 <div class="mb-4">
                     <label for="firstName" class="block w-1/2 text-start">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required class="w-full p-2 bg-gray-50 border border-gray-300 rounded-lg text-black">
+                    <input type="text" id="firstName" name="firstName" required class="w-full p-2  border-accent-c border-2 rounded-lg text-black">
                 </div>
                 <div class="mb-4">
                     <label for="lastName" class="block w-1/2 text-start">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required class="w-full p-2 bg-gray-50 border border-gray-300 rounded-lg text-black">
+                    <input type="text" id="lastName" name="lastName" required class="w-full p-2  border-accent-c border-2 rounded-lg text-black">
                 </div>
                 <div class="mb-4">
                     <label for="email" class="block text-start">Email</label>
-                    <input type="email" id="email" name="email" required class="w-full p-2 bg-gray-50 border border-gray-300 rounded-lg text-black">
+                    <input type="email" id="email" name="email" required class="w-full p-2 border-accent-c border-2 rounded-lg text-black">
                 </div>
                 <div class="mb-4">
                     <label for="interests" class="block text-start">What interests you?</label>
-                    <select name="interests" id="interests" multiple class="h-auto bg-gray-50 border border-gray-300 text-black rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <select name="interests" id="interests" multiple class="h-auto border-accent-c border-2 text-black rounded-lg focus:ring-background-a focus:border-background-a block w-full p-2.5 ">
                     <option value="Health">Health</option>
                     <option value="Training & Behavior">Training & Behavior</option>
                     <option value="Food">Food</option>
@@ -186,10 +216,10 @@
                     <option value="Movies">Movies</option>
                     </select>
                 </div>
-                <button type="submit" class="bg-accent-b inline-block rounded-sm px-2 py-2 w-auto text-accent-a cursor-pointer" onclick="submitContactForm()">Submit</button>
-                
+                <button type="submit" class="bg-accent-b inline-block rounded-sm px-2 py-2 w-auto text-white cursor-pointer" onclick="submitContactForm()">Submit</button>
                 </form>
             </div>
+
         </div>
     </div>
 
@@ -202,4 +232,8 @@
         </footer>
     </div>
     <script src="js/scripts.js"></script>
+    <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
+
+
+    
   </body>
