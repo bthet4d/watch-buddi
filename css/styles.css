@@ -37,56 +37,32 @@
   }
 
 
-  .image-item {
-    min-width: 200px; /* Set a minimum width for each image */
-    height: 100%; /* Set the height as needed */
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
-    margin-right: 10px; /* Add margin between images */
-}
+    .image-item {
+        min-width: 200px; /* Set a minimum width for each image */
+        height: 100%; /* Set the height as needed */
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the background image */
+        margin-right: 10px; /* Add margin between images */
+    }
 
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
-}
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
-
-
-
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
 
 #headerLogo {
-    background-image: url('../images/logos/buddi_transp_large_cropped');
+    background-image: url('../images/logos/buddi_transp_large_cropped.png');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
 }
   
-
-
-
-
 /* Default styles for all devices */
 #heroBackground {
-    background-image: url('../images/background/fourPuppies_med.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-
-}
-
-#heroBackgroundTwo {
-    background-image: url('../images/background/terrier_medium.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-
-}
-
-#heroBackgroundThree {
     background-image: url('../images/background/dogOnRoad_medium.jpg');
     max-width: 100%;
     height: auto;
@@ -94,31 +70,8 @@
 
 }
 
-#cta-one {
-    background-image: url('../images/background/coupleWithPuppies_medium.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-}
-
-#cta-two {
-    background-image: url('../images/background/kittensInBasket_medium.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-
-}
-
-#cta-three {
+#ctaBackground {
     background-image: url('../images/background/manPlayingWithDog_medium.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-
-}
-
-#cta-four {
-    background-image: url('../images/background/kittensInWashbowl_medium.jpg');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -137,55 +90,15 @@
     }
 
     #heroBackground {
-        background-image: url('../images/background/fourPuppies_xs.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-
-    }
-
-    #heroBackgroundTwo {
-        background-image: url('../images/background/terrier_small.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-    
-    }
-
-    #heroBackgroundThree {
         background-image: url('../images/background/dogOnRoad_small.jpg');
         max-width: 100%;
         height: auto;
         background-repeat: no-repeat;
-    
-    }
-
-    #cta-one {
-        background-image: url('../images/background/coupleWithPuppies_small.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
 
     }
 
-    #cta-two {
-        background-image: url('../images/background/kittensInBasket_small.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-
-    }
-    
-    #cta-three {
+    #ctaBackground {
         background-image: url('../images/background/manPlayingWithDog_small.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-
-    }
-    
-    #cta-four {
-        background-image: url('../images/background/kittensInWashbowl_small.jpg');
         max-width: 100%;
         height: auto;
         background-repeat: no-repeat;
@@ -203,66 +116,19 @@
     }
 
     #heroBackground {
-        background-image: url('../images/background/fourPuppies_xs.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-
-    }
-
-    #heroBackgroundTwo {
-        background-image: url('../images/background/terrier_small.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-    
-    }
-
-    #heroBackgroundThree {
         background-image: url('../images/background/dogOnRoad_small.jpg');
         max-width: 100%;
         height: auto;
         background-repeat: no-repeat;
-    
-    }
-
-    #cta-one {
-        background-image: url('../images/background/coupleWithPuppies_small.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-
-    }
-
-    #cta-two {
-        background-image: url('../images/background/kittensInBasket_small.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
 
     }
     
-    #cta-three {
+    #ctaBackground {
         background-image: url('../images/background/manPlayingWithDog_small.jpg');
         max-width: 100%;
         height: auto;
         background-repeat: no-repeat;
 
-    }
-    
-    #cta-four {
-        background-image: url('../images/background/kittensInWashbowl_small.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-
-    }
-
-    #libaryCollage {
-        background-image: url('../images/deviceMedia/LibrarCollage.tif');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
     }
 }
 
@@ -270,55 +136,15 @@
 @media (min-width: 768px) and (max-width: 992px) {
     /* Styles for laptops */
     #heroBackground {
-        background-image: url('../images/background/fourPuppies_med.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-
-    }
-
-    #heroBackgroundTwo {
-        background-image: url('../images/background/terrier_medium.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-    
-    }
-
-    #heroBackgroundThree {
         background-image: url('../images/background/dogOnRoad_medium.jpg');
         max-width: 100%;
         height: auto;
         background-repeat: no-repeat;
-    
-    }
-
-    #cta-one {
-        background-image: url('../images/background/coupleWithPuppies_medium.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
 
     }
 
-    #cta-two {
-        background-image: url('../images/background/kittensInBasket_medium.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-
-    }
-    
-    #cta-three {
+    #ctaBackground {
         background-image: url('../images/background/manPlayingWithDog_medium.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-
-    }
-    
-    #cta-four {
-        background-image: url('../images/background/kittensInWashbowl_medium.jpg');
         max-width: 100%;
         height: auto;
         background-repeat: no-repeat;
@@ -330,46 +156,14 @@
 @media (min-width: 992px) {
     /* Styles for desktops */
     #heroBackground {
-        background-image: url('../images/background/fourPuppies_large.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-
-    }
-
-    #heroBackgroundTwo {
-        background-image: url('../images/background/terrier_large.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-    
-    }
-
-    #heroBackgroundThree {
         background-image: url('../images/background/dogOnDirtRoad_large.jpg');
         max-width: 100%;
         height: auto;
         background-repeat: no-repeat;
-    
-    }
-
-    #cta-one {
-        background-image: url('../images/background/coupleWithPuppies_large.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
 
     }
 
-    #cta-two {
-        background-image: url('../images/background/kittensInBasket_large.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-
-    }
-    
-    #cta-three {
+    #ctaBackground {
         background-image: url('../images/background/manPlayingWithDog_large.jpg');
         max-width: 100%;
         height: auto;
@@ -377,11 +171,4 @@
 
     }
     
-    #cta-four {
-        background-image: url('../images/background/kittensInWashbowl_large.jpg');
-        max-width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-
-    }
 }

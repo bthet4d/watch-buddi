@@ -628,6 +628,10 @@ video {
   float: right;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .m-8 {
   margin: 2rem;
 }
@@ -676,10 +680,6 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .ml-6 {
@@ -742,14 +742,6 @@ video {
   display: none;
 }
 
-.aspect-auto {
-  aspect-ratio: auto;
-}
-
-.h-64 {
-  height: 16rem;
-}
-
 .h-8 {
   height: 2rem;
 }
@@ -780,10 +772,6 @@ video {
 
 .w-40 {
   width: 10rem;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .w-8 {
@@ -858,6 +846,12 @@ video {
   justify-content: space-between;
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -888,6 +882,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-sm {
   border-radius: 0.125rem;
 }
@@ -896,8 +894,9 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
+.border-y-4 {
+  border-top-width: 4px;
+  border-bottom-width: 4px;
 }
 
 .border-b-2 {
@@ -908,14 +907,6 @@ video {
   border-bottom-width: 4px;
 }
 
-.border-l-4 {
-  border-left-width: 4px;
-}
-
-.border-r-4 {
-  border-right-width: 4px;
-}
-
 .border-t-2 {
   border-top-width: 2px;
 }
@@ -924,9 +915,9 @@ video {
   border-top-width: 4px;
 }
 
-.border-accent-c {
+.border-accent-b {
   --tw-border-opacity: 1;
-  border-color: rgb(114 79 65 / var(--tw-border-opacity));
+  border-color: rgb(251 176 66 / var(--tw-border-opacity));
 }
 
 .border-background-a {
@@ -937,6 +928,11 @@ video {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.bg-accent-a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(223 74 39 / var(--tw-bg-opacity));
 }
 
 .bg-accent-b {
@@ -953,6 +949,11 @@ video {
   background-color: rgb(255 235 135 / var(--tw-bg-opacity));
 }
 
+.bg-background-b {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 216 179 / var(--tw-bg-opacity));
+}
+
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -960,6 +961,11 @@ video {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-br {
@@ -1045,6 +1051,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1108,6 +1119,16 @@ video {
   line-height: 2.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1123,6 +1144,10 @@ video {
 
 .tracking-tight {
   letter-spacing: -0.025em;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .text-accent-a {
@@ -1176,28 +1201,30 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-accent-b {
+  --tw-shadow-color: #FBB042;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .shadow-black {
   --tw-shadow-color: #000;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.transition-shadow {
-  transition-property: box-shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* Hide scrollbar for IE, Edge and Firefox */
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
 
 /* Custom Styles */
 
@@ -1248,7 +1275,7 @@ video {
 }
 
 #headerLogo {
-  background-image: url('../images/logos/buddi_transp_large_cropped');
+  background-image: url('../images/logos/buddi_transp_large_cropped.png');
   max-width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -1257,49 +1284,14 @@ video {
 /* Default styles for all devices */
 
 #heroBackground {
-  background-image: url('../images/background/fourPuppies_med.jpg');
-  max-width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-}
-
-#heroBackgroundTwo {
-  background-image: url('../images/background/terrier_medium.jpg');
-  max-width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-}
-
-#heroBackgroundThree {
   background-image: url('../images/background/dogOnRoad_medium.jpg');
   max-width: 100%;
   height: auto;
   background-repeat: no-repeat;
 }
 
-#cta-one {
-  background-image: url('../images/background/coupleWithPuppies_medium.jpg');
-  max-width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-}
-
-#cta-two {
-  background-image: url('../images/background/kittensInBasket_medium.jpg');
-  max-width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-}
-
-#cta-three {
+#ctaBackground {
   background-image: url('../images/background/manPlayingWithDog_medium.jpg');
-  max-width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-}
-
-#cta-four {
-  background-image: url('../images/background/kittensInWashbowl_medium.jpg');
   max-width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -1318,49 +1310,14 @@ video {
   }
 
   #heroBackground {
-    background-image: url('../images/background/fourPuppies_xs.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #heroBackgroundTwo {
-    background-image: url('../images/background/terrier_small.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #heroBackgroundThree {
     background-image: url('../images/background/dogOnRoad_small.jpg');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
   }
 
-  #cta-one {
-    background-image: url('../images/background/coupleWithPuppies_small.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #cta-two {
-    background-image: url('../images/background/kittensInBasket_small.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #cta-three {
+  #ctaBackground {
     background-image: url('../images/background/manPlayingWithDog_small.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #cta-four {
-    background-image: url('../images/background/kittensInWashbowl_small.jpg');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -1378,56 +1335,14 @@ video {
   }
 
   #heroBackground {
-    background-image: url('../images/background/fourPuppies_xs.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #heroBackgroundTwo {
-    background-image: url('../images/background/terrier_small.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #heroBackgroundThree {
     background-image: url('../images/background/dogOnRoad_small.jpg');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
   }
 
-  #cta-one {
-    background-image: url('../images/background/coupleWithPuppies_small.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #cta-two {
-    background-image: url('../images/background/kittensInBasket_small.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #cta-three {
+  #ctaBackground {
     background-image: url('../images/background/manPlayingWithDog_small.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #cta-four {
-    background-image: url('../images/background/kittensInWashbowl_small.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #libaryCollage {
-    background-image: url('../images/deviceMedia/LibrarCollage.tif');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -1440,49 +1355,14 @@ video {
   /* Styles for laptops */
 
   #heroBackground {
-    background-image: url('../images/background/fourPuppies_med.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #heroBackgroundTwo {
-    background-image: url('../images/background/terrier_medium.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #heroBackgroundThree {
     background-image: url('../images/background/dogOnRoad_medium.jpg');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
   }
 
-  #cta-one {
-    background-image: url('../images/background/coupleWithPuppies_medium.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #cta-two {
-    background-image: url('../images/background/kittensInBasket_medium.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #cta-three {
+  #ctaBackground {
     background-image: url('../images/background/manPlayingWithDog_medium.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #cta-four {
-    background-image: url('../images/background/kittensInWashbowl_medium.jpg');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -1495,59 +1375,18 @@ video {
   /* Styles for desktops */
 
   #heroBackground {
-    background-image: url('../images/background/fourPuppies_large.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #heroBackgroundTwo {
-    background-image: url('../images/background/terrier_large.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #heroBackgroundThree {
     background-image: url('../images/background/dogOnDirtRoad_large.jpg');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
   }
 
-  #cta-one {
-    background-image: url('../images/background/coupleWithPuppies_large.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #cta-two {
-    background-image: url('../images/background/kittensInBasket_large.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  #cta-three {
+  #ctaBackground {
     background-image: url('../images/background/manPlayingWithDog_large.jpg');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
   }
-
-  #cta-four {
-    background-image: url('../images/background/kittensInWashbowl_large.jpg');
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-}
-
-.hover\:shadow-xl:hover {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .focus\:border-background-a:focus {
@@ -1608,10 +1447,6 @@ video {
     max-width: 24rem;
   }
 
-  .sm\:flex-col {
-    flex-direction: column;
-  }
-
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1641,9 +1476,29 @@ video {
     margin: 1rem;
   }
 
+  .md\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .md\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .md\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .md\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .md\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .md\:flex {
@@ -1662,6 +1517,14 @@ video {
     max-width: 28rem;
   }
 
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1670,6 +1533,11 @@ video {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-8xl {
@@ -1698,12 +1566,28 @@ video {
     margin-right: 4rem;
   }
 
-  .lg\:mt-32 {
-    margin-top: 8rem;
+  .lg\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
-  .lg\:mt-4 {
+  .lg\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .lg\:my-4 {
     margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .lg\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .lg\:mt-32 {
+    margin-top: 8rem;
   }
 
   .lg\:block {
@@ -1738,6 +1622,20 @@ video {
     justify-content: center;
   }
 
+  .lg\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1762,9 +1660,17 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .lg\:tracking-wider {
+    letter-spacing: 0.05em;
+  }
 }
 
 @media (min-width: 1280px) {
+  .xl\:w-1\/2 {
+    width: 50%;
+  }
+
   .xl\:max-w-xl {
     max-width: 36rem;
   }

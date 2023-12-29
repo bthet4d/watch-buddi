@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
         // Get video slider elements
-        const videoScroll = document.getElementById("videoScroll");
+        const videoScroll = document.getElementById("videos");
         const videoLeftButton = document.getElementById("video-scroll-left");
         const videoRightButton = document.getElementById("video-scroll-right");
     
