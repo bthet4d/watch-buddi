@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
@@ -11,282 +16,109 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Quicksand&display=swap" rel="stylesheet">
     <title>Watch buddi</title>
-    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="./css/output.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
   </head>
-  <body class="h-full w-full bg-gradient-to-br from-white to-background-b text-accent-a font-qs">
-    <div class="container mx-auto">
-            <div class=" flex flex-col md:flex lg:flex  items-center text-accent-a">    
-                <div class="flex justify-center items-center my-2 md:my-4 lg:my-8">
-                    <!-- Medium and Large Screens -->
-                    <img src="images/logos/buddi_transp_small_cropped.png" alt="Medium Logo" class="lg:block hidden " />
-                    <!-- Small Screens -->
-                    <img src="images/logos/buddi_transp_xs_cropped.png" alt="Small Logo" class="block lg:hidden " />
-                </div>
-                
-                <div class="flex justify-center items-center my-2 md:my-4 lg:my-8 mx-2 md:mx-4 lg:mx-8">
-                    <div class="flex items-center border-b-4 border-t-4 border-background-a">
-                        <h1 class="text-xl font-semibold sm:font-extrabold lg:text-4xl p-4 overflow-wrap">Fetching content for pet people!</h1>
-                    </div>
-                </div>
-                
-                <div class="flex items-center justify-center my-2 md:my-4 lg:my-8">
-                    
-                    <ul class="flex my-2 lg:my-4 space-x-2 lg:space-x-4 text-sm md:text-lg lg:text-xl text-white">
-                        <li class="bg-accent-b rounded p-2 w-auto">
-                          <a href="#videos" class="cursor-pointer">Videos</a>
-                        </li>
-                        <li class="bg-accent-b rounded p-2 w-auto">
-                          <a id="navLink" class="cursor-pointer">Newsletter</a>
-                        </li>
-                        <li class="bg-accent-b rounded p-2 w-auto">
-                          <a href="#followUs" class="cursor-pointer">Social Media</a>
-                        </li>
-                      </ul>
-                </div>
-            </div>
-
-        <div class="relative w-full h-screen text-white my-2 md:my-4 lg:my-8">
-            <div id="heroBackground" class="w-full absolute inset-0 bg-cover bg-center"></div>
-            <div id="hero" class="absolute inset-0 flex items-center justify-center z-10 text-white">
-                <div class="absolute w-3/4 xl:w-1/2 h-auto flex flex-col mx-4 lg:mx-8 items-center justify-center top-0 rounded-sm bg-accent-c/50  " >
-                    <div id="heroOverlay" class="relative flex items-center shadow-md shadow-black ">
-                        <p class="m-4 overflow-wrap text-lg md:text-xl lg:text-3xl font-grotesk  w-auto">
-                            Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
-                        </p>
-                    </div>
-                </div>
-            </div>    
+  <body class="h-full w-full">
+    <!-- Header with Logo -->
+    <div id="header" class="Header w-full h-full bg-slate-50">
+        <div class="Logo w-full p-4">
+            <img
+                class=""
+                alt="Watch Buddi"
+                src="./img/logos/buddi_transp_xs_cropped.png"
+            />
         </div>
     </div>
-    <div class=" flex justify-center items-center overflow-hidden p-4 w-full my-4 md:my-8 lg:my-12">
-       
-        <div class="sm:visible md:visible lg:hidden inset-y-0 left-0 flex items-center justify-center z-10">
-            <svg id="image-scroll-left" class="w-8 h-8 cursor-pointer bg-transparent text-accent-b" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-            </svg>
-        </div>
+        
+<!-- Hero Section -->
 
-        <div id="imageScroll" class="flex snap-x scroll scroll-smooth w-full overflow-x-auto relative items-start justify-start lg:items-center lg:justify-center no-scrollbar">
-            
-            <div class="scroll snap-center mx-2 flex items-center">
-                <img src="images/deviceMedia/Kid_Tablet.png" alt="Childs Tablet" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-            </div>
-            <div class="scroll snap-center mx-2 flex items-center">
-                <img src="images/deviceMedia/Tablet.png" alt="Tablet" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-            </div>
-            <div class="scroll snap-center mx-2 flex items-center">
-                <img src="images/deviceMedia/TV_family.png" alt="Family TV" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-            </div>
-            
-        </div>
+    <div class="Desktop01 w-full h-screen relative shadow">
+        <div id="heroBackground" class="w-full absolute inset-0 bg-center bg-cover"></div>
 
-        <div class="sm:visible md:visible lg:hidden inset-y-0 right-0 flex items-center justify-center z-10">
-            <svg id="image-scroll-right" class="w-8 h-8 cursor-pointer bg-transparent text-accent-b" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-        </div>
-    </div>
-    <div class="container mx-auto">
-        <div class="flex flex-col my-4 md:my-8 lg:my-12 py-4">
-            <div class="flex flex-col items-center text-center p-4">
-                <div class="flex flex-col rounded-lg w-full shadow-md shadow-accent-b bg-background-b h-auto">
-                    <div class="flex flex-col items-center justify-center p-2 md:p-4 lg:p-6">
-                        <div class="flex my-4 md:my-8 lg:my-12">
-                            <p class="text-2xl md:text-4xl overflow-wrap tracking-wide lg:tracking-wider font-bold text-white">buddi arrives on this website and mobile app stores on National Puppy Day, March 23, 2024!</p>
-                        </div>
-                        
-                        <div class="flex my-4 md:my-8 lg:my-12 w-full items-center justify-center">
-                            <a id="signUpLink" class="flex bg-accent-a rounded-md px-2 py-2 w-auto text-white cursor-pointer">
-                                Sign Up Now
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="relative w-full text-white">
-                            <div class="flex w-full rounded-sm border-y-4 border-accent-b bg-accent-b">
-                                <a data-type="countdown" data-id="4736270" class="tickcounter" style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto;" title="Buddi Launch" href="//www.tickcounter.com/">Buddi Launch</a>
-                            </div>
-                        <div class="flex items-center kustify-center w-full bg-white p-4 md:p-6 lg:p-8">
-                            <img src="images/transparent/timer/terrierLookingUp_medium.jpg" alt="Terrier Countdown" class="flex" />
-                        </div>
+        <div id="hero" class="absolute inset-0 flex items-center justify-center z-10 text-white">
+            <div id="heroOverlay" class="flex-col justify-between items-start w-5/6 h-3/4 font-qs">
+                <p class="w-full py-4 text-white font-grotesk lg:tracking-wider xl:tracking-wider 2xl:tracking-wider text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
+                    Fetching content for pet people.
+                </p>
+    
+                <div class="w-full md:w-1/2 py-4 text-white font-bold font-qs">
+                    <p class="py-4 w-full text-lg md:text-xl lg:text-2xl xl:text-3xl">
+                    Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
+                    </p>
+                </div>
+    
+                <div class="flex items-center py-4">
+                    <div class="GetNotified w-auto p-2 bg-orange-700 rounded-xl flex items-center gap-2 text-white text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-bold leading-4">
+                    Get Notified
+                    <img
+                        class="relative w-[24px] h-[24px] block"
+                        alt="Arrow circle right"
+                        src="/img/arrow-circle-right-1.png"
+                    />
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="relative w-full h-auto text-white my-4 md:my-8 lg:my-12 p-4">
-            <div class="flex justify-center items-center">
-                <p class="text-accent-a text-4xl">Collage WIP</p>
+    </div>
+  
+    <div class="Frame62 flex w-full h-screen relative bg-white">
+        <div class="flex-col w-1/2">
+            <div class="w-full">
+                <div class="text-black text-lg md:text-xl font-bold font-qs leading-5 tracking-widest p-4 md:p-4 lg:p-8 xl:p-16">
+                    buddi arrives on this website and mobile app stores on National Puppy Day, <br/>March 23, 2024!
+                </div>
+            </div>
+            <div class="TerrierlookingupMedium w-full relative">
+                <img
+                    class="justify-end items-end"
+                    alt="Terrier watching timer"
+                    srcset="./img/terrierlookingup-medium-1.png"
+                />
             </div>
         </div>
     
-        <div class="relative w-full h-screen text-white my-4 md:my-8 lg:my-12">
-            <div id="ctaBackground" class="absolute inset-0 flex items-center justify-center bg-cover bg-center "></div>
-            <div id="buddiContent" class="absolute inset-0 flex items-center justify-center z-10 lg:mx-16 md:mx-8 sm:mx-4 ">
-                <div class="absolute md:w-3/4 sm:w-1/2 h-auto flex flex-col items-center justify-center top-0 rounded-sm bg-accent-c/50 md:p8 sm:p4">
-                    <div class="relative flex flex-col w-full h-full items-center justify-center p-2">
-                        <div class="flex justify-center items-center lg:m-8 md:m-4 sm:m-2">
-                            <div class="flex flex-col sm:flex:col items-center border-b-4 border-t-4 border-background-a">
-                                <div class="flex p-4">
-                                    <img src="images/logos/buddi_transp_small_cropped.png" alt=""  loading="lazy" decoding="async">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex-col p-4">
-                            <p class="overflow-wrap text-xl md:text-2xl lg:text-3xl">
-                                Movies, TV Shows, Live Cams, <span class="text-background-a">24/7 Steaming Channels</span>. Content <span class="text-background-a">by pet people</span> for <span class="text-background-a">people!</span> Family friendly & commercial free!
-                            </p>
-                            <div class="mt-2">
-                                <p class="overflow-wrap text-2xl md:text-3xl lg:text-4xl text-background-b font-bold">
-                                    only $7.99 a month or $79 a year!
-                                </p>
-                            </div>
-                            
-                        </div>
+        <div class="flex-col w-auto">
+            <div class="flex w-full py-8  text-orange-700 font-qs font-bold text-2xl md:text-4xl lg:text-6xl tracking-widest">
+                <div class="countdown flex items-center flex-col mx-2 md:mx-4 lg:mx-8 tracking-widest">
+                    <div class="w-full flex">
+                        <span id="days"></span>
+                        <span class="mx-4">:</span>
+                    </div>
+                    <div class="Days flex-col my-4 text-center text-orange-800 text-xl font-bold">
+                        <span>Days</span>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="relative w-full h-auto text-white my-8 md:my-12">
-            <div class="flex justify-center items-center">
-                <p class="text-accent-a text-4xl">Sizzle Reel WIP</p>
-            </div>
-        </div>
-    </div>    
-
-
-    <div class="flex justify-center items-center overflow-hidden p-4 w-full my-4 md:my-8 lg:my-12">
-        <div class=" inset-y-0 left-0 flex items-center justify-center z-10">
-            <svg id="video-scroll-left" class="w-8 h-8 cursor-pointer bg-transparent text-accent-b" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-            </svg>
-        </div>
     
-        <div id="videos" class="flex snap-x scroll scroll-smooth w-full overflow-x-auto relative items-start justify-start no-scrollbar">
-            <div class="scroll snap-center mx-2 flex items-center">
-                <a href="https://www.youtube.com/embed/Z2DKr4QT-HQ?si=dlCGkrUV9UFv_dxA&amp;controls=0" class="scroll snap-center mx-2 flex items-center" target="_blank">
-                    <img src="images/thumbnails/large/blackBear.png" alt="Black Bear" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                </a>
-            </div>
-            <div class="scroll snap-center mx-2 flex items-center">
-                <a href="https://www.youtube.com/embed/TFEdsnEcQ-0?si=jXNTJ5EkZoiFMGWN&amp;controls=0" class="scroll snap-center mx-2 flex items-center" target="_blank">
-                    <img src="images/thumbnails/large/kitty_911.jpg" alt="Kitty 911" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                </a>
-            </div>
-            <div class="scroll snap-center mx-2 flex items-center">
-                <a href="https://www.youtube.com/embed/TpGP-qHyFSQ?si=7Jzy6T5WBwK0WecA&amp;controls=0" class="scroll snap-center mx-2 flex items-center" target="_blank">
-                    <img src="images/thumbnails/large/pick_a_puppy.jpg" alt="Pick A Puppy" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                </a>
-            </div>
-            <div class="scroll snap-center mx-2 flex items-center">
-                <a href="https://www.youtube.com/embed/UC8pN5JNcgk?si=R0yxveb3tzMFjVov&amp;controls=0" class="scroll snap-center mx-2 flex items-center" target="_blank">
-                    <img src="images/thumbnails/large/petHeroes.jpg" alt="Pet Heroes" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                </a>
-            </div>
-            <div class="scroll snap-center mx-2 flex items-center">
-                <a href="https://www.youtube.com/embed/zdXtzIg8e1A?si=od6nEdVP3Wvko7mH&amp;controls=0" class="scroll snap-center mx-2 flex items-center" target="_blank">
-                    <img src="images/thumbnails/large/er_vets.jpg" alt="ER Vets" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                </a>      
-            </div> 
-        </div>
+                <div class="countdown flex items-center flex-col mx-2 md:mx-4 lg:mx-8">
+                    <div class="w-full flex">
+                        <span id="hours"></span>
+                        <span class="mx-4">:</span>
+                    </div>
+                    <div class="flex-col Hours my-4 text-center text-orange-800 text-xl font-bold">
+                        <span>Hours</span>
+                    </div>
+                </div>
     
-        <div class="inset-y-0 left-0 flex items-center justify-center z-10">
-            <svg id="video-scroll-right" class="w-8 h-8 cursor-pointer bg-transparent text-accent-b" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-        </div>
-    </div>
-
-    <div class="container mx-auto">
-        <div class="flex relative w-full h-auto text-white my-4 md:my-8 lg:my-12 justify-center items-center">
-            <div class="flex items-center justify-center">
-                <p class="flex text-lg md:text-xl lg:text-2xl font-bold text-accent-b font-grotesk p-2 md:p-4">Sign up for a newsletter from buddi for exclusive content, discounts, and updates about the newest one-stop, personalized app for people who love pets.</p>
-            </div>
-        </div>
-        <div class="flex flex-col justify-center items-center bold w-full ">
-            
-            <div class="flex flex-col items-center justify-center text-accent-c w-full px-2 py-2">
-                <h2 class="text-4xl text-accent-a">Contact Us</h2>
-                <br>
-                <form id="contactForm" class="w-full lg:w-1/2 md:w-1/2 sm:w-full lg:text-xl md:text-lg sm:text-lg p-2">
-                <div class="mb-4">
-                    <label for="firstName" class="block w-1/2 text-start">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required class="w-full p-2 rounded-lg text-black">
-                </div>
-                <div class="mb-4">
-                    <label for="lastName" class="block w-1/2 text-start">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required class="w-full p-2 rounded-lg text-black">
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-start">Email</label>
-                    <input type="email" id="email" name="email" required class="w-full p-2 rounded-lg text-black">
-                </div>
-                <div class="mb-4">
-                    <label for="interests" class="block text-start">What interests you?</label>
-                    <select name="interests" id="interests" multiple class="h-auto text-black rounded-lg focus:ring-background-a focus:border-background-a block w-full p-2.5 ">
-                    <option value="Health">Health</option>
-                    <option value="Training & Behavior">Training & Behavior</option>
-                    <option value="Food">Food</option>
-                    <option value="Rescues">Rescues</option>
-                    <option value="Puppies & Kittens">Puppies & Kittens</option>
-                    <option value="Wildlife">Wildlife</option>
-                    <option value="Grooming">Grooming</option>
-                    <option value="Senior Pets">Senior Pets</option>
-                    <option value="Traveling With Pets">Traveling With Pets</option>
-                    <option value="Service Animals">Service Animals</option>
-                    <option value="Movies">Movies</option>
-                    </select>
-                </div>
-                <button type="submit" class="bg-accent-b inline-block rounded-md px-2 py-2 w-auto text-white cursor-pointer" onclick="submitContactForm()">Submit</button>
-                </form>
-            </div>
-
-        </div>
-
-        <div class="flex w-full h-auto text-accent-c my-4 md:my-8 justify-center items-center">
-            <div class="flex justify-center items-center">
-                <div id="followUs" class="flex flex-col items-center justify-center w-full">
-                    <div class="flex items-center justify-center mx-2 my-2">
-                        <p class="text-lg md:text-2xl lg:text-3xl ">Follow buddi on social media and find out what buddi is up to!</p>
+                <div class="countdown flex items-center flex-col mx-2 md:mx-4 lg:mx-8">
+                    <div class="w-full flex">
+                        <span id="minutes"></span>
+                        <span class="mx-4">:</span>
                     </div>
-                    <div class="flex justify-center text-white my-4 md:my-8">
-                      <a href="#!" class="mr-9">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-                        </svg>
-                      </a>
-                      <a href="#!" class="mr-9">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-                        </svg>
-                      </a>
-                      <a href="#!" class="mr-9">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"></path>
-                        </svg>
-                      </a>
-                      <a href="#!" class="mr-9 ">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
+                    <div class="Minutes my-4 text-center text-orange-800 text-xl font-bold">Min</div>
+                </div>
+    
+                <div class="countdown flex items-center flex-col mx-2 md:mx-4 lg:mx-8">
+                    <span id="seconds"></span>
+                    <div class="Seconds my-4 text-center text-orange-800 text-xl font-bold">Sec</div>
+                </div>
             </div>
         </div>
     </div>
+    
 
-    <div class="flex text-center justify-center text-white bg-accent-b font-qs w-full">
-        <footer class="flex flex-col text-center justify-center inset-x-0 bottom-0 p-2 md:p-4 lg:p-8 w-full text-lg md:text-xl lg:text-2xl ">
-            <p class="my-2">For any business inquiries, please email contact@unifiedd.media</p>
-            <div class="w-full"> © 2024 Copyright: <a class="text-xl" href="">Unified Media Development, LLC. All Rights Reserved</a>
-            </div>
-        </footer>
-    </div>
     <script src="js/scripts.js"></script>
-    
-    <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
-    
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
   </body>
