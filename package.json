@@ -1,8 +1,17 @@
 {
-  "dependencies": {
-    "tailwindcss": "^3.3.6"
-  },
+  "name": "watchbuddi",
+  "description": "",
   "scripts": {
-    "build:css": "npx tailwindcss build ./css/styles.css -o ./css/output.css"
+    "watch": "tailwindcss -i ./css/styles.css -o ./css/output.css --watch",
+    "build": "tailwindcss -i ./css/styles.css -o ./css/output.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "materialize-css": "^1.0.0-rc.2"
+
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.0",
+    "materialize-css": "^1.0.0-rc.2"
   }
 }
