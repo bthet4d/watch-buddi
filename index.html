@@ -9,9 +9,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Poppins:wght@900&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <title>Watch buddi</title>
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/slider.css">
+
 
   </head>
   <body class="h-full w-full">
@@ -22,186 +24,90 @@
         </div>
     </div>
 
-    <div class="relative">
-        <!-- Small Screens -->
-        <div class="relative block md:hidden lg:hidden">
-            <div class="absolute inset-0 bg-black opacity-30"></div>
+    <section id="hero">
+        <div class="relative">
+            <!-- Small Screens -->
+            <div class="relative block md:hidden lg:hidden">
+                <div class="absolute inset-0 bg-black opacity-30"></div>
 
-            <img class="object-cover block md:hidden lg:hidden" src="/img/backgrounds/cropped/TV_family_small.png" alt="Small Screen Image">
-            <!-- Custom Overlay for Small Screen -->
-            <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/50 flex flex-col justify-end">
-                <div id="heroOverlay" class="flex-col font-qs text-start text-white p-4">
+                <img class="object-cover block md:hidden lg:hidden" src="/img/backgrounds/cropped/TV_family_small.png" alt="Small Screen Image">
+                <!-- Custom Overlay for Small Screen -->
+                <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/50 flex flex-col justify-end">
+                    <div id="heroOverlay" class="flex-col font-qs text-start text-white p-4">
 
-                    <p class="w-full font-grotesk text-lg font-bold">Fetching content for pet people.
-                    </p>
-        
-                    <div class="w-full font-qs my-4 text-sm">
-                        <p class="w-full">Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
+                        <p class="w-full font-grotesk text-lg font-bold">Fetching content for pet people.
                         </p>
-                    </div>
-        
-                    <div class="flex items-center">
-                        <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center py-1 text-white px-4">
-                            <p class="px-2 text-sm">Get Notified</p>
-                            <div class="pr-2">
-                                <img
-                                    class="relative w-[16px] h-[16px] block"
-                                    alt="Arrow circle right"
-                                    src="/img/arrow-circle-right-1.png"
-                                />
-                            </div>
+            
+                        <div class="w-full font-qs my-4 text-sm">
+                            <p class="w-full">Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
+                            </p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Medium Screens -->
-        <div class="relative hidden md:block lg:hidden">
-            <img class="object-cover hidden md:block lg:hidden" src="/img/backgrounds/cropped/TV_family_medium.png" alt="Small Screen Image">
-            <!-- Custom Overlay for Medium Screens -->
-            <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/50 flex flex-col justify-center">
-                <div id="heroOverlay" class="flex-col h-auto font-qs text-start text-white p-4 ml-12 space-y-8">
-                    <p class="w-full font-grotesk font-bold text-2xl">Fetching content for pet people.</p>
-
-                    <div class="w-full font-qs my-4 text-lg">
-                        <p class="w-full">Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
-                        </p>
-                    </div>
-        
-                    <div class="flex items-center">
-                        <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center py-1 text-white px-4">
-                            <p class="px-2 text-sm">Get Notified</p>
-                            <div class="pr-2">
-                                <img
-                                    class="relative w-[20px] h-[20px] block"
-                                    alt="Arrow circle right"
-                                    src="/img/arrow-circle-right-1.png"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Large Screens -->
-        <div class="relative hidden lg:block">
-            <img class="object-cover bg-cover hidden lg:block" src="/img/backgrounds/cropped/TV_family_large.png" alt="Small Screen Image">
-            <!-- Custom Overlay for Large Screens -->
-            <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/50 flex flex-col justify-center">
-                <div id="heroOverlay" class="flex-col w-5/6 h-auto font-qs text-start text-white p-4 ml-12 space-y-16">
-                    <p class="w-full font-grotesk font-bold text-5xl xl:text-7xl">Fetching content for pet people.
-                    </p>
-
-                    <div class="xl:w-1/2 font-qs my-4">
-                        <p class="w-full text-3xl font-bold">Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
-                        </p>
-                    </div>
-        
-                    <div class="flex items-center">
-
-                        <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center py-1 text-white px-4">
-                            <p class="px-4 text-xl">Get Notified</p>
-                            <div class="pr-4">
-                                <img
-                                    class="relative w-[24px] h-[24px] block"
-                                    alt="Arrow circle right"
-                                    src="/img/arrow-circle-right-1.png"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="bg-white py-4">
-        <div id="countdownTimer" class="flex w-full ">
-            <div class="flex w-full items-center">
-                <div class="flex w-full">
-                    <p class="text-black text-lg md:text-3xl lg:text-3xl xl:text-5xl font-semibold mx-8">
-                        buddi arrives on this website and mobile app 
-                        stores on National Puppy Day, 
-                        March 23, 2024!
-                    </p>
-                </div>     
-            </div>
-            <div id="timer" class="flex w-full px-4">
-                <div class="flex w-full text-orange-700 items-center justify-center ">
-                    <div class="flex flex-col items-center mx-2">
-                        <p class="text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-extrabold" id="days">00</p>
-                        <p class="font-qs text-sm md:text-lg lg:2xl xl:text-4xl font-semibold ">Days</p>
-                    </div>
-                        
-                    <div class="mx-2 flex items-center">
-                        <p class="text-lg md:text-2xl lg:text-3xl xl:text-4xl mb-2 font-extrabold">:</p>
-                    </div>   
-                        
-                    <div class="flex flex-col items-center mx-2">
-                        <p class="text-4xl  md:text-5xl lg:text-7xl xl:text-8xl font-extrabold" id="hours">00</p>
-                        <p class="font-qs text-sm md:text-lg lg:2xl xl:text-4xl font-semibold ">Hours</p>
-                    </div>
-                        
-                    <div class="mx-2 flex items-center">
-                        <p class="text-lxl md:text-2xl lg:text-3xl xl:text-4xl mb-2 font-extrabold">:</p>
-                    </div>                
-                        
-                    <div class="flex flex-col items-center mx-2">
-                        <p class="text-4xl  md:text-5xl lg:text-7xl xl:text-8xl font-extrabold" id="minutes">00</p>
-                        <p class="font-qs text-sm md:text-lg lg:2xl xl:text-4xl font-semibold ">Minutes</p>
-                    </div>
-        
-                    <div class="mx-2 flex items-center">
-                        <p class="text-lxl md:text-2xl lg:text-3xl xl:text-4xl mb-2 font-extrabold">:</p>
-                    </div>                 
-                        
-                    <div class="flex flex-col items-center mx-2">
-                        <p class="text-4xl  md:text-5xl lg:text-7xl xl:text-8xl font-extrabold" id="seconds">00</p>
-                        <p class="font-qs text-sm md:text-lg lg:2xl xl:text-4xl font-semibold">Seconds</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="flex w-full">
-            <div id="timerImage" class="flex w-full justify-center ">
-                <img src="img/watchDog.jpg" alt="Watch Dog" class=""/>
-            </div>
-        </div>
-    </div>
-        
-    </div>
-
-    <div class="flex flex-col items-center justify-center">
-        <div class="flex-col text-center mx-auto space-y-4 md:space-x-5 lg:space-y-6">
-            <div class="flex text-center justify-center mx-auto">
-                <img src="img/logos/buddi_transp_small_cropped.png" alt="Watch Buddi" class="sm:block hidden " />
-                <img src="img/logos/buddi_transp_xs_cropped.png" alt="Watch Buddi" class="block sm:hidden " />
-            </div>
-    
-            <div class="flex text-center justify-center items-center mx-1">
-                <h1 class="font-grotesk font-semibold text-2xl md:text-4xl lg:text-7xl md:tracking-wide">Fetching content for pet people.</h1>
-            </div>
-            <div class="flex w-full">
-                <p class="flex font-ws text-xl md:text-2xl lg:text-3xl xl:text-4xl p-2 mx-auto w-3/4">
-                    Sign up for a newsletter from buddi for exclusive content, discounts, and updates about the newest one-stop, 
-                    personalized app for people who love pets.
-                </p>
-            </div>
-    
-            <div class="flex w-full items-center justify-center p-4">
-                <div class="flex flex-col items-start w-full ">
-                    <label for="email" class="mb-2 text-gray-500 text-lg md:text-2xl">Email Address:</label>
-                    <div id="emailCta" class="flex items-center w-full mx-4">
-                        <input type="email" id="email" placeholder="harry@potter.com" class="px-4 py-2 border rounded-lg w-full">
-                        <div id="GetNotified" class=" w-full mx-6">
-                            <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center text-white py-2 px-4">
-                                <p class="px-1 text:xl lg:text-2xl">Get Notified</p>
-                                <div class="pr-1 md:pr-2 ml-4">
+            
+                        <div class="flex items-center">
+                            <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center py-1 text-white px-4">
+                                <p class="px-2 text-sm">Get Notified</p>
+                                <div class="pr-2">
                                     <img
-                                        class="relative w-[24xp] h-[24px] block"
+                                        class="relative w-[16px] h-[16px] block"
+                                        alt="Arrow circle right"
+                                        src="/img/arrow-circle-right-1.png"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Medium Screens -->
+            <div class="relative hidden md:block lg:hidden">
+                <img class="object-cover hidden md:block lg:hidden" src="/img/backgrounds/cropped/TV_family_medium.png" alt="Small Screen Image">
+                <!-- Custom Overlay for Medium Screens -->
+                <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/50 flex flex-col justify-center">
+                    <div id="heroOverlay" class="flex-col h-auto font-qs text-start text-white p-4 ml-12 space-y-8">
+                        <p class="w-full font-grotesk font-bold text-2xl">Fetching content for pet people.</p>
+
+                        <div class="w-full font-qs my-4 text-lg">
+                            <p class="w-full">Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
+                            </p>
+                        </div>
+            
+                        <div class="flex items-center">
+                            <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center py-1 text-white px-4">
+                                <p class="px-2 text-sm">Get Notified</p>
+                                <div class="pr-2">
+                                    <img
+                                        class="relative w-[20px] h-[20px] block"
+                                        alt="Arrow circle right"
+                                        src="/img/arrow-circle-right-1.png"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Large Screens -->
+            <div class="relative hidden lg:block">
+                <img class="object-cover bg-cover hidden lg:block" src="/img/backgrounds/cropped/TV_family_large.png" alt="Small Screen Image">
+                <!-- Custom Overlay for Large Screens -->
+                <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/50 flex flex-col justify-center">
+                    <div id="heroOverlay" class="flex-col w-5/6 h-auto font-qs text-start text-white p-4 ml-12 space-y-16">
+                        <p class="w-full font-grotesk font-bold text-5xl xl:text-7xl">Fetching content for pet people.
+                        </p>
+
+                        <div class="xl:w-1/2 font-qs my-4">
+                            <p class="w-full text-3xl font-bold">Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
+                            </p>
+                        </div>
+            
+                        <div class="flex items-center">
+                            <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center py-1 text-white px-4">
+                                <p class="px-4 text-xl">Get Notified</p>
+                                <div class="pr-4">
+                                    <img
+                                        class="relative w-[24px] h-[24px] block"
                                         alt="Arrow circle right"
                                         src="/img/arrow-circle-right-1.png"
                                     />
@@ -212,59 +118,303 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="question">
+        <div class="bg-white py-4 my-12 mx-8">
+            <div class="flex flex-col w-full justify-center items-center">
+                <h2 class="font-grotesk font-semibold text-2xl md:text-3xl lg:text-4xl">Wanna see what buddi is fetching for you? Check it out!</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="countdown-timer">
+        <div class="bg-white py-4 my-12">
+            <div id="countdownTimer" class="flex w-full ">
+                <div class="flex w-full items-center">
+                    <div class="flex w-full ml-4 lg:ml-8 xl:ml-12">
+                        <p class="text-black text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold mx-8 xl:ml-8">
+                            buddi arrives on this website and mobile app 
+                            stores on National Puppy Day, 
+                            March 23, 2024!
+                        </p>
+                    </div>     
+                </div>
+                <div id="timer" class="flex w-full px-4">
+                    <div class="flex w-full text-orange-700 items-center justify-center font-poppins space-x-4">
+                        <div class="flex flex-col items-center mx-2">
+                            <p class="text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-extrabold" id="days">00</p>
+                            <p class="font-qs text-sm md:text-lg lg:2xl xl:text-4xl font-semibold ">Days</p>
+                        </div>
+                            
+                        <div class="mx-2 flex items-center">
+                            <p class="text-lg md:text-2xl lg:text-3xl xl:text-4xl mb-2 font-extrabold">:</p>
+                        </div>   
+                            
+                        <div class="flex flex-col items-center mx-2">
+                            <p class="text-4xl  md:text-5xl lg:text-7xl xl:text-8xl font-extrabold" id="hours">00</p>
+                            <p class="font-qs text-sm md:text-lg lg:2xl xl:text-4xl font-semibold ">Hours</p>
+                        </div>
+                            
+                        <div class="mx-2 flex items-center">
+                            <p class="text-lxl md:text-2xl lg:text-3xl xl:text-4xl mb-2 font-extrabold">:</p>
+                        </div>                
+                            
+                        <div class="flex flex-col items-center mx-2">
+                            <p class="text-4xl  md:text-5xl lg:text-7xl xl:text-8xl font-extrabold" id="minutes">00</p>
+                            <p class="font-qs text-sm md:text-lg lg:2xl xl:text-4xl font-semibold ">Minutes</p>
+                        </div>
+            
+                        <div class="mx-2 flex items-center">
+                            <p class="text-lxl md:text-2xl lg:text-3xl xl:text-4xl mb-2 font-extrabold">:</p>
+                        </div>                 
+                            
+                        <div class="flex flex-col items-center mx-2">
+                            <p class="text-4xl  md:text-5xl lg:text-7xl xl:text-8xl font-extrabold" id="seconds">00</p>
+                            <p class="font-qs text-sm md:text-lg lg:2xl xl:text-4xl font-semibold">Seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     
-    <div class="bg-white flex justify-center items-center">
-        <div class="SocialMedia w-96 h-32 justify-center items-center gap-7 inline-flex">
-            <div class="Facebook w-12 h-12 justify-center items-center flex">
-              <div class=" w-12 h-12 relative flex-col justify-start items-start flex">
-                <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1_333)">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M47 23.6409C47 10.8602 36.703 0.5 24.0029 0.5C11.297 0.502875 1 10.8602 1 23.6437C1 35.1912 9.4112 44.7637 20.4038 46.5V30.3302H14.5683V23.6437H20.4096V18.5412C20.4096 12.7431 23.8448 9.54075 29.0967 9.54075C31.6149 9.54075 34.2452 9.99206 34.2452 9.99206V15.6839H31.3447C28.4902 15.6839 27.599 17.469 27.599 19.3002V23.6409H33.975L32.9574 30.3273H27.5962V46.4971C38.5888 44.7608 47 35.1883 47 23.6409Z" fill="#C2410C"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_1_333">
-                    <rect width="48" height="48" fill="white" transform="translate(0 0.5)"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-              </div>
+            <div class="flex w-full">
+                <div id="timerImage" class="flex w-full justify-center my-4 lg:w-5/6">
+                    <img src="img/watchDog.jpg" alt="Watch Dog" class="mx-auto"/>
+                </div>
             </div>
-            <div class="Instagram w-12 h-12 justify-center items-center flex">
-              <div class=" w-12 h-12 relative flex-col justify-start items-start flex">
-                <a href=https://www.instagram.com/watchbuddi/?utm_source=ig_embed&amp;utm_campaign=loading style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
-                    <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25 2.5C19.0298 2.5 18.279 2.5275 15.9333 2.632C13.5875 2.742 11.9897 3.1105 10.59 3.655C9.12176 4.20725 7.79185 5.07352 6.69325 6.19325C5.57421 7.29241 4.70805 8.62216 4.155 10.09C3.6105 11.487 3.23925 13.0875 3.132 15.425C3.0275 17.7762 3 18.5243 3 24.5028C3 30.4757 3.0275 31.2238 3.132 33.5695C3.242 35.9125 3.6105 37.5103 4.155 38.91C4.71875 40.3565 5.4695 41.583 6.69325 42.8067C7.91425 44.0305 9.14075 44.784 10.5873 45.345C11.9897 45.8895 13.5848 46.2607 15.9278 46.368C18.2763 46.4725 19.0243 46.5 25 46.5C30.9757 46.5 31.721 46.4725 34.0695 46.368C36.4098 46.258 38.013 45.8895 39.4128 45.345C40.88 44.7925 42.209 43.9262 43.3067 42.8067C44.5305 41.583 45.2812 40.3565 45.845 38.91C46.3868 37.5103 46.758 35.9125 46.868 33.5695C46.9725 31.2238 47 30.4757 47 24.5C47 18.5243 46.9725 17.7763 46.868 15.4278C46.758 13.0875 46.3868 11.487 45.845 10.09C45.292 8.62212 44.4259 7.29236 43.3067 6.19325C42.2085 5.07311 40.8785 4.20677 39.41 3.655C38.0075 3.1105 36.407 2.73925 34.0667 2.632C31.7183 2.5275 30.973 2.5 24.9945 2.5H25.0028H25ZM23.0282 6.4655H25.0028C30.8768 6.4655 31.5725 6.48475 33.8907 6.592C36.0357 6.68825 37.2017 7.0485 37.9772 7.34825C39.003 7.747 39.7372 8.2255 40.5072 8.9955C41.2772 9.7655 41.753 10.497 42.1518 11.5255C42.4543 12.2983 42.8118 13.4643 42.908 15.6093C43.0153 17.9275 43.0373 18.6233 43.0373 24.4945C43.0373 30.3658 43.0153 31.0642 42.908 33.3825C42.8118 35.5275 42.4515 36.6908 42.1518 37.4663C41.799 38.4215 41.2361 39.2852 40.5045 39.9935C39.7345 40.7635 39.003 41.2393 37.9745 41.638C37.2045 41.9405 36.0385 42.298 33.8907 42.397C31.5725 42.5015 30.8768 42.5263 25.0028 42.5263C19.1287 42.5263 18.4303 42.5015 16.112 42.397C13.967 42.298 12.8038 41.9405 12.0282 41.638C11.0726 41.2858 10.2081 40.7238 9.49825 39.9935C8.76606 39.2841 8.20224 38.4196 7.84825 37.4635C7.5485 36.6908 7.18825 35.5247 7.092 33.3797C6.9875 31.0615 6.9655 30.3657 6.9655 24.489C6.9655 18.615 6.9875 17.922 7.092 15.6037C7.191 13.4587 7.5485 12.2928 7.851 11.5173C8.24975 10.4915 8.72825 9.75725 9.49825 8.98725C10.2682 8.21725 10.9997 7.7415 12.0282 7.34275C12.8038 7.04025 13.967 6.68275 16.112 6.58375C18.1415 6.49025 18.928 6.46275 23.0282 6.46V6.4655ZM36.7453 10.1175C36.3986 10.1175 36.0553 10.1858 35.735 10.3185C35.4147 10.4511 35.1236 10.6456 34.8785 10.8907C34.6333 11.1359 34.4389 11.4269 34.3062 11.7472C34.1735 12.0675 34.1052 12.4108 34.1052 12.7575C34.1052 13.1042 34.1735 13.4475 34.3062 13.7678C34.4389 14.0881 34.6333 14.3791 34.8785 14.6243C35.1236 14.8694 35.4147 15.0639 35.735 15.1965C36.0553 15.3292 36.3986 15.3975 36.7453 15.3975C37.4454 15.3975 38.1169 15.1194 38.612 14.6243C39.1071 14.1292 39.3853 13.4577 39.3853 12.7575C39.3853 12.0573 39.1071 11.3858 38.612 10.8907C38.1169 10.3956 37.4454 10.1175 36.7453 10.1175ZM25.0028 13.203C23.5042 13.1796 22.016 13.4546 20.6247 14.0119C19.2334 14.5692 17.9669 15.3977 16.8989 16.4492C15.8309 17.5006 14.9828 18.7541 14.4038 20.1365C13.8249 21.5189 13.5267 23.0026 13.5267 24.5014C13.5267 26.0001 13.8249 27.4839 14.4038 28.8663C14.9828 30.2487 15.8309 31.5021 16.8989 32.5536C17.9669 33.6051 19.2334 34.4336 20.6247 34.9909C22.016 35.5482 23.5042 35.8231 25.0028 35.7998C27.9687 35.7535 30.7976 34.5428 32.8787 32.4289C34.9598 30.3151 36.1262 27.4677 36.1262 24.5014C36.1262 21.535 34.9598 18.6876 32.8787 16.5738C30.7976 14.46 27.9687 13.2493 25.0028 13.203ZM25.0028 17.1658C26.9479 17.1658 28.8134 17.9385 30.1888 19.3139C31.5643 20.6893 32.337 22.5548 32.337 24.5C32.337 26.4452 31.5643 28.3107 30.1888 29.6861C28.8134 31.0615 26.9479 31.8342 25.0028 31.8342C23.0576 31.8342 21.1921 31.0615 19.8167 29.6861C18.4412 28.3107 17.6685 26.4452 17.6685 24.5C17.6685 22.5548 18.4412 20.6893 19.8167 19.3139C21.1921 17.9385 23.0576 17.1658 25.0028 17.1658Z" fill="#C2410C"/>
-                    </svg>
-                </a>  
-              </div>
-            </div>
-            <div class="Twitter w-12 h-12 justify-center items-center flex">
-              <div class=" w-12 h-12 relative flex-col justify-start items-start flex">
-                <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.078 42.5C33.192 42.5 43.101 27.4918 43.101 14.4995C43.101 14.0795 43.101 13.6535 43.083 13.2336C45.0122 11.8371 46.6772 10.1082 48 8.12783C46.1979 8.92234 44.2883 9.44598 42.333 9.68175C44.3926 8.45073 45.9352 6.51382 46.674 4.23104C44.739 5.37735 42.621 6.18206 40.413 6.60991C38.9285 5.02907 36.9642 3.98181 34.8243 3.63034C32.6843 3.27888 30.4882 3.64284 28.576 4.66583C26.6639 5.68882 25.1424 7.31376 24.2474 9.28895C23.3523 11.2641 23.1335 13.4793 23.625 15.5914C19.7092 15.3951 15.8784 14.3779 12.3811 12.6058C8.88381 10.8337 5.79805 8.34635 3.324 5.30498C2.06802 7.47412 1.68472 10.0399 2.25194 12.4814C2.81916 14.9229 4.29436 17.0569 6.378 18.4503C4.81662 18.3972 3.28956 17.978 1.92 17.2263V17.3613C1.92269 19.6337 2.70992 21.8354 4.14862 23.5943C5.58732 25.3532 7.58924 26.5615 9.816 27.0148C8.97079 27.2477 8.09769 27.3637 7.221 27.3598C6.60295 27.3617 5.98614 27.3044 5.379 27.1888C6.00836 29.1449 7.23382 30.8551 8.88374 32.08C10.5337 33.3049 12.5254 33.983 14.58 34.0195C11.0897 36.7607 6.7782 38.2474 2.34 38.2402C1.55796 38.2435 0.776469 38.1984 0 38.1052C4.50454 40.9769 9.73589 42.5016 15.078 42.5Z" fill="#C2410C"/>
-                    </svg>
+        </div>
+    </section>
+
+    <section id="videoSlider_a" class="">
+        <div  class="flex h-full w-full  justify-center items-center">
+            <div class="csslider infinity" id="slider1">
+                <input type="radio" name="slides" checked="checked" id="slides_1"/>
+                <input type="radio" name="slides" id="slides_2"/>
+                <input type="radio" name="slides" id="slides_3"/>
+                <input type="radio" name="slides" id="slides_4"/>
+                <input type="radio" name="slides" id="slides_5"/>
+                <ul>
                     
-              </div>
-            </div>
-            <div class="LinkedIn w-12 h-12 justify-center items-center flex">
-              <div class=" w-12 h-12 relative flex-col justify-start items-start flex">
-                <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1_342)">
-                    <path d="M41.1941 39.6938H34.3785V29.0199C34.3785 26.4747 34.3331 23.1981 30.8334 23.1981C27.2837 23.1981 26.7404 25.9713 26.7404 28.8346V39.6928H19.9248V17.7434H26.4679V20.743H26.5594C27.2141 19.6235 28.1604 18.7024 29.2974 18.0781C30.4343 17.4537 31.7191 17.1493 33.0152 17.1974C39.9232 17.1974 41.197 21.7413 41.197 27.6525L41.1941 39.6938ZM12.2345 14.7431C11.4521 14.7432 10.6872 14.5114 10.0369 14.0769C9.3863 13.6424 8.87933 13.0248 8.5798 12.3021C8.28026 11.5794 8.20168 10.7842 8.35435 10.0169C8.50669 9.2496 8.8832 8.54476 9.43621 7.99152C9.98955 7.43828 10.6939 7.06144 11.4615 6.90868C12.2287 6.75592 13.0239 6.83412 13.7466 7.13337C14.4694 7.43258 15.0871 7.93944 15.5219 8.58979C15.9568 9.24017 16.1887 10.0048 16.189 10.7871C16.189 11.3065 16.0869 11.8208 15.8882 12.3008C15.6894 12.7807 15.3983 13.2167 15.0311 13.5841C14.6636 13.9514 14.2278 14.2429 13.7479 14.4417C13.268 14.6406 12.7537 14.743 12.2345 14.7431ZM15.6421 39.6938H8.81943V17.7434H15.6421V39.6938ZM44.5921 0.503134H5.39442C4.50483 0.493094 3.64744 0.836675 3.01101 1.45838C2.37457 2.08008 2.01095 2.92904 2 3.8187V43.179C2.01063 44.0689 2.37393 44.9186 3.01037 45.5408C3.6468 46.1634 4.50451 46.5074 5.39442 46.4981H44.5921C45.4839 46.5093 46.3438 46.166 46.9829 45.5437C47.6219 44.9212 47.9874 44.0709 48 43.179V3.81586C47.9871 2.92444 47.6212 2.07451 46.9822 1.45282C46.3432 0.831135 45.4836 0.488536 44.5921 0.500293" fill="#C2410C"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_1_342">
-                    <rect width="48" height="48" fill="white" transform="translate(0 0.5)"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
+                    <li class=" ">
+                        <p>
+                            <iframe class="w-full h-[400px]" src="https://www.youtube.com/embed/Z2DKr4QT-HQ?si=dlCGkrUV9UFv_dxA&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <iframe class="w-full h-[400px]"  src="https://www.youtube.com/embed/TFEdsnEcQ-0?si=jXNTJ5EkZoiFMGWN&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <iframe class="w-full  h-[400px]"  src="https://www.youtube.com/embed/TpGP-qHyFSQ?si=7Jzy6T5WBwK0WecA&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <iframe class="w-full h-[400px]"  src="https://www.youtube.com/embed/UC8pN5JNcgk?si=R0yxveb3tzMFjVov&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <iframe class="w-full h-[400px]"  src="https://www.youtube.com/embed/zdXtzIg8e1A?si=od6nEdVP3Wvko7mH&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </p>
+                    </li>
                     
-              </div>
+        
+                    <li>
+                        <p>
+                            <video controls preload>
+                            <source src="" />
+                            </video> 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <video controls preload>
+                            <source src="" />
+                            </video> 
+                        </p>
+                    </li>
+                </ul>
+                
+                <div class="navigation"> 
+                    <div>
+                        <label for="slides_1"></label>
+                        <label for="slides_2"></label>
+                        <label for="slides_3"></label>
+                        <label for="slides_4"></label>
+                        <label for="slides_5"></label>
+                    </div>
+                </div>
             </div>
-          </div>
-    </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="flex flex-col items-center justify-center">
+            <div class="flex-col text-center mx-auto space-y-4 md:space-x-5 lg:space-y-6">
+                <div class="flex text-center justify-center mx-auto">
+                    <img src="img/logos/buddi_transp_small_cropped.png" alt="Watch Buddi" class="sm:block hidden " />
+                    <img src="img/logos/buddi_transp_xs_cropped.png" alt="Watch Buddi" class="block sm:hidden " />
+                </div>
+        
+                <div class="flex text-center justify-center items-center mx-1">
+                    <h1 class="font-grotesk font-semibold text-2xl md:text-4xl lg:text-7xl md:tracking-wide">Fetching content for pet people.</h1>
+                </div>
+                <div class="flex w-full">
+                    <p class="flex font-ws text-xl md:text-2xl lg:text-3xl xl:text-4xl p-2 mx-auto w-3/4">
+                        Sign up for a newsletter from buddi for exclusive content, discounts, and updates about the newest one-stop, 
+                        personalized app for people who love pets.
+                    </p>
+                </div>
+        
+                <div class="flex w-full items-center justify-center p-4">
+                    <div class="flex flex-col items-start w-full xl:w-1/2 xl:mx-auto">
+                        <label for="email" class="mb-2 text-gray-500 text-lg md:text-2xl">Email Address:</label>
+                        <div id="emailCta" class="flex items-center w-full">
+                            <input type="email" id="email" placeholder="harry@potter.com" class="px-4 py-2 border rounded-lg w-full mr-4">
+                            <div id="GetNotified" class=" w-full mx-6">
+                                <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center text-white py-2 px-4">
+                                    <p class="px-1 text:xl lg:text-2xl">Get Notified</p>
+                                    <div class="pr-1 md:pr-2 ml-4">
+                                        <img
+                                            class="relative w-[24xp] h-[24px] block"
+                                            alt="Arrow circle right"
+                                            src="/img/arrow-circle-right-1.png"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social-media">
+        <div class="bg-white flex justify-center items-center">
+            <div class="SocialMedia w-96 h-32 justify-center items-center gap-7 inline-flex">
+                <div class="Facebook w-12 h-12 justify-center items-center flex">
+                <div class=" w-12 h-12 relative flex-col justify-start items-start flex">
+                    <a href="" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
     
+                        <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_333)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M47 23.6409C47 10.8602 36.703 0.5 24.0029 0.5C11.297 0.502875 1 10.8602 1 23.6437C1 35.1912 9.4112 44.7637 20.4038 46.5V30.3302H14.5683V23.6437H20.4096V18.5412C20.4096 12.7431 23.8448 9.54075 29.0967 9.54075C31.6149 9.54075 34.2452 9.99206 34.2452 9.99206V15.6839H31.3447C28.4902 15.6839 27.599 17.469 27.599 19.3002V23.6409H33.975L32.9574 30.3273H27.5962V46.4971C38.5888 44.7608 47 35.1883 47 23.6409Z" fill="#C2410C"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_333">
+                            <rect width="48" height="48" fill="white" transform="translate(0 0.5)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                </div>
+                <div class="Instagram w-12 h-12 justify-center items-center flex">
+                <div class=" w-12 h-12 relative flex-col justify-start items-start flex">
+                    <a href=https://www.instagram.com/watchbuddi/?utm_source=ig_embed&amp;utm_campaign=loading style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                        <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 2.5C19.0298 2.5 18.279 2.5275 15.9333 2.632C13.5875 2.742 11.9897 3.1105 10.59 3.655C9.12176 4.20725 7.79185 5.07352 6.69325 6.19325C5.57421 7.29241 4.70805 8.62216 4.155 10.09C3.6105 11.487 3.23925 13.0875 3.132 15.425C3.0275 17.7762 3 18.5243 3 24.5028C3 30.4757 3.0275 31.2238 3.132 33.5695C3.242 35.9125 3.6105 37.5103 4.155 38.91C4.71875 40.3565 5.4695 41.583 6.69325 42.8067C7.91425 44.0305 9.14075 44.784 10.5873 45.345C11.9897 45.8895 13.5848 46.2607 15.9278 46.368C18.2763 46.4725 19.0243 46.5 25 46.5C30.9757 46.5 31.721 46.4725 34.0695 46.368C36.4098 46.258 38.013 45.8895 39.4128 45.345C40.88 44.7925 42.209 43.9262 43.3067 42.8067C44.5305 41.583 45.2812 40.3565 45.845 38.91C46.3868 37.5103 46.758 35.9125 46.868 33.5695C46.9725 31.2238 47 30.4757 47 24.5C47 18.5243 46.9725 17.7763 46.868 15.4278C46.758 13.0875 46.3868 11.487 45.845 10.09C45.292 8.62212 44.4259 7.29236 43.3067 6.19325C42.2085 5.07311 40.8785 4.20677 39.41 3.655C38.0075 3.1105 36.407 2.73925 34.0667 2.632C31.7183 2.5275 30.973 2.5 24.9945 2.5H25.0028H25ZM23.0282 6.4655H25.0028C30.8768 6.4655 31.5725 6.48475 33.8907 6.592C36.0357 6.68825 37.2017 7.0485 37.9772 7.34825C39.003 7.747 39.7372 8.2255 40.5072 8.9955C41.2772 9.7655 41.753 10.497 42.1518 11.5255C42.4543 12.2983 42.8118 13.4643 42.908 15.6093C43.0153 17.9275 43.0373 18.6233 43.0373 24.4945C43.0373 30.3658 43.0153 31.0642 42.908 33.3825C42.8118 35.5275 42.4515 36.6908 42.1518 37.4663C41.799 38.4215 41.2361 39.2852 40.5045 39.9935C39.7345 40.7635 39.003 41.2393 37.9745 41.638C37.2045 41.9405 36.0385 42.298 33.8907 42.397C31.5725 42.5015 30.8768 42.5263 25.0028 42.5263C19.1287 42.5263 18.4303 42.5015 16.112 42.397C13.967 42.298 12.8038 41.9405 12.0282 41.638C11.0726 41.2858 10.2081 40.7238 9.49825 39.9935C8.76606 39.2841 8.20224 38.4196 7.84825 37.4635C7.5485 36.6908 7.18825 35.5247 7.092 33.3797C6.9875 31.0615 6.9655 30.3657 6.9655 24.489C6.9655 18.615 6.9875 17.922 7.092 15.6037C7.191 13.4587 7.5485 12.2928 7.851 11.5173C8.24975 10.4915 8.72825 9.75725 9.49825 8.98725C10.2682 8.21725 10.9997 7.7415 12.0282 7.34275C12.8038 7.04025 13.967 6.68275 16.112 6.58375C18.1415 6.49025 18.928 6.46275 23.0282 6.46V6.4655ZM36.7453 10.1175C36.3986 10.1175 36.0553 10.1858 35.735 10.3185C35.4147 10.4511 35.1236 10.6456 34.8785 10.8907C34.6333 11.1359 34.4389 11.4269 34.3062 11.7472C34.1735 12.0675 34.1052 12.4108 34.1052 12.7575C34.1052 13.1042 34.1735 13.4475 34.3062 13.7678C34.4389 14.0881 34.6333 14.3791 34.8785 14.6243C35.1236 14.8694 35.4147 15.0639 35.735 15.1965C36.0553 15.3292 36.3986 15.3975 36.7453 15.3975C37.4454 15.3975 38.1169 15.1194 38.612 14.6243C39.1071 14.1292 39.3853 13.4577 39.3853 12.7575C39.3853 12.0573 39.1071 11.3858 38.612 10.8907C38.1169 10.3956 37.4454 10.1175 36.7453 10.1175ZM25.0028 13.203C23.5042 13.1796 22.016 13.4546 20.6247 14.0119C19.2334 14.5692 17.9669 15.3977 16.8989 16.4492C15.8309 17.5006 14.9828 18.7541 14.4038 20.1365C13.8249 21.5189 13.5267 23.0026 13.5267 24.5014C13.5267 26.0001 13.8249 27.4839 14.4038 28.8663C14.9828 30.2487 15.8309 31.5021 16.8989 32.5536C17.9669 33.6051 19.2334 34.4336 20.6247 34.9909C22.016 35.5482 23.5042 35.8231 25.0028 35.7998C27.9687 35.7535 30.7976 34.5428 32.8787 32.4289C34.9598 30.3151 36.1262 27.4677 36.1262 24.5014C36.1262 21.535 34.9598 18.6876 32.8787 16.5738C30.7976 14.46 27.9687 13.2493 25.0028 13.203ZM25.0028 17.1658C26.9479 17.1658 28.8134 17.9385 30.1888 19.3139C31.5643 20.6893 32.337 22.5548 32.337 24.5C32.337 26.4452 31.5643 28.3107 30.1888 29.6861C28.8134 31.0615 26.9479 31.8342 25.0028 31.8342C23.0576 31.8342 21.1921 31.0615 19.8167 29.6861C18.4412 28.3107 17.6685 26.4452 17.6685 24.5C17.6685 22.5548 18.4412 20.6893 19.8167 19.3139C21.1921 17.9385 23.0576 17.1658 25.0028 17.1658Z" fill="#C2410C"/>
+                        </svg>
+                    </a>  
+                </div>
+                </div>
+                <div class="LinkedIn w-12 h-12 justify-center items-center flex">
+                <div class=" w-12 h-12 relative flex-col justify-start items-start flex">
+                    <a href="" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                        <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_342)">
+                            <path d="M41.1941 39.6938H34.3785V29.0199C34.3785 26.4747 34.3331 23.1981 30.8334 23.1981C27.2837 23.1981 26.7404 25.9713 26.7404 28.8346V39.6928H19.9248V17.7434H26.4679V20.743H26.5594C27.2141 19.6235 28.1604 18.7024 29.2974 18.0781C30.4343 17.4537 31.7191 17.1493 33.0152 17.1974C39.9232 17.1974 41.197 21.7413 41.197 27.6525L41.1941 39.6938ZM12.2345 14.7431C11.4521 14.7432 10.6872 14.5114 10.0369 14.0769C9.3863 13.6424 8.87933 13.0248 8.5798 12.3021C8.28026 11.5794 8.20168 10.7842 8.35435 10.0169C8.50669 9.2496 8.8832 8.54476 9.43621 7.99152C9.98955 7.43828 10.6939 7.06144 11.4615 6.90868C12.2287 6.75592 13.0239 6.83412 13.7466 7.13337C14.4694 7.43258 15.0871 7.93944 15.5219 8.58979C15.9568 9.24017 16.1887 10.0048 16.189 10.7871C16.189 11.3065 16.0869 11.8208 15.8882 12.3008C15.6894 12.7807 15.3983 13.2167 15.0311 13.5841C14.6636 13.9514 14.2278 14.2429 13.7479 14.4417C13.268 14.6406 12.7537 14.743 12.2345 14.7431ZM15.6421 39.6938H8.81943V17.7434H15.6421V39.6938ZM44.5921 0.503134H5.39442C4.50483 0.493094 3.64744 0.836675 3.01101 1.45838C2.37457 2.08008 2.01095 2.92904 2 3.8187V43.179C2.01063 44.0689 2.37393 44.9186 3.01037 45.5408C3.6468 46.1634 4.50451 46.5074 5.39442 46.4981H44.5921C45.4839 46.5093 46.3438 46.166 46.9829 45.5437C47.6219 44.9212 47.9874 44.0709 48 43.179V3.81586C47.9871 2.92444 47.6212 2.07451 46.9822 1.45282C46.3432 0.831135 45.4836 0.488536 44.5921 0.500293" fill="#C2410C"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_342">
+                            <rect width="48" height="48" fill="white" transform="translate(0 0.5)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="videoSlider_b mb-12">
+        <div  class="flex h-full w-full  justify-center items-center">
+            <div class="csslider infinity " id="slider2">
+                <input type="radio" name="slides2" checked="checked" id="slides_6"/>
+                <input type="radio" name="slides2" id="slides_7"/>
+                <input type="radio" name="slides2" id="slides_8"/>
+                <input type="radio" name="slides2" id="slides_9"/>
+                <input type="radio" name="slides2" id="slides_10"/>
+                <ul class="w-full  ">
+                    
+                    <li class=" ">
+                        <p>
+                            <iframe class="w-full h-[400px]" src="https://www.youtube.com/embed/Q4GNWigEUXg?si=To-KeBrR6rfr46QV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <iframe class="w-full h-[400px]" src="https://www.youtube.com/embed/Q4GNWigEUXg?si=To-KeBrR6rfr46QV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <iframe class="w-full h-[400px]" src="https://www.youtube.com/embed/Q4GNWigEUXg?si=To-KeBrR6rfr46QV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <iframe class="w-full h-[400px]" src="https://www.youtube.com/embed/Q4GNWigEUXg?si=To-KeBrR6rfr46QV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <iframe class="w-full h-[400px]" src="https://www.youtube.com/embed/Q4GNWigEUXg?si=To-KeBrR6rfr46QV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </p>
+                    </li>
+                    
+                    <li>
+                        <p>
+                            <video controls preload>
+                            <source src="" />
+                            </video> 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <video controls preload>
+                            <source src="" />
+                            </video> 
+                        </p>
+                    </li>
+                </ul>
+                
+                <div class="navigation"> 
+                    <div>
+                        <label for="slides_6"></label>
+                        <label for="slides_7"></label>
+                        <label for="slides_8"></label>
+                        <label for="slides_9"></label>
+                        <label for="slides_10"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="flex text-center justify-center text-black font-grotesk w-full bg-slate-50">
         <footer class="flex flex-col text-center justify-center inset-x-0 bottom-0 p-2 md:p-4 lg:p-8 w-full text-sm lg:text-lg ">
             <div class="w-full"> 

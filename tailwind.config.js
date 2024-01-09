@@ -7,6 +7,7 @@ export default {
       fontFamily: {
         "qs": ['Quicksand', 'sans-serif'],
         "grotesk": ['Familjen+Grotesk', 'sans-serif'],
+        "poppins": ['Poppins', 'sans-serif']
       },
       colors: {
         'accent-a': '#DF4A27',
