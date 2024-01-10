@@ -22,7 +22,7 @@ Clone this repository:
 npm install
 
 ## Build Tailwind CSS:
-npm run build:css
+npm run build
 
 ## Open index.html in your browser
 
