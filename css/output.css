@@ -790,10 +790,6 @@ video {
   height: 24px;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
 .h-auto {
   height: auto;
 }
@@ -860,6 +856,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .max-w-xs {
