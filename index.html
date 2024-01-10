@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="./css/output.css">
     <link rel="stylesheet" href="./css/slider.css">
 
+    <script>
+        function submitContactEmail () {
+        console.log ("Email address submitted.");
+    }
+    </script>
 
   </head>
   <body class="h-full w-full">
@@ -45,14 +50,18 @@
             
                         <div class="flex items-center">
                             <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center py-1 text-white px-4">
-                                <p class="px-2 text-sm">Get Notified</p>
-                                <div class="pr-2">
-                                    <img
-                                        class="relative w-[16px] h-[16px] block"
-                                        alt="Arrow circle right"
-                                        src="./img/arrow-circle-right-1.png"
-                                    />
-                                </div>
+                                <button class="px-2 text-sm">
+                                    <a href="#emailAddress" class="cursor-pointer flex items-center">Get Notified
+                                        <div class="pl-1">
+                                            <img
+                                                class="relative w-[16px] h-[169x] block"
+                                                alt="Arrow circle right"
+                                                src="./img/arrow-circle-right-1.png"
+                                            />
+                                        </div>
+
+                                    </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -74,14 +83,17 @@
             
                         <div class="flex items-center">
                             <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center py-1 text-white px-4">
-                                <p class="px-2 text-sm">Get Notified</p>
-                                <div class="pr-2">
-                                    <img
-                                        class="relative w-[20px] h-[20px] block"
-                                        alt="Arrow circle right"
-                                        src="./img/arrow-circle-right-1.png"
-                                    />
-                                </div>
+                                <button class="px-2 text-lg flex items-center">
+                                    <a href="#emailAddress" class="cursor-pointer flex items-center">Get Notified
+                                        <div class="pl-2">
+                                            <img
+                                                class="relative w-[16px] h-[16px] block"
+                                                alt="Arrow circle right"
+                                                src="./img/arrow-circle-right-1.png"
+                                            />
+                                        </div>
+                                    </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -104,14 +116,17 @@
             
                         <div class="flex items-center">
                             <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center py-1 text-white px-4">
-                                <p class="px-4 text-xl">Get Notified</p>
-                                <div class="pr-4">
-                                    <img
-                                        class="relative w-[24px] h-[24px] block"
-                                        alt="Arrow circle right"
-                                        src="./img/arrow-circle-right-1.png"
-                                    />
-                                </div>
+                                <button class="flex px-4 text-xl items-center">
+                                    <a href="#emailAddress" class="cursor-pointer flex items-center">Get Notified
+                                        <div class="pl-4">
+                                            <img
+                                                class="relative w-[24px] h-[24px] block"
+                                                alt="Arrow circle right"
+                                                src="./img/arrow-circle-right-1.png"
+                                            />
+                                        </div>
+                                    </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -185,75 +200,6 @@
         </div>
     </section>
 
-    <!-- <section id="videoSlider_a" class="flex ">
-        <div  class="flex h-full w-full  justify-center items-center">
-            <div class="csslider infinity" id="slider1">
-                <input type="radio" name="slides" checked="checked" id="slides_1"/>
-                <input type="radio" name="slides" id="slides_2"/>
-                <input type="radio" name="slides" id="slides_3"/>
-                <input type="radio" name="slides" id="slides_4"/>
-                <input type="radio" name="slides" id="slides_5"/>
-                <ul class="w-full">
-                    
-                    <li class=" ">
-                        <p class="video-container">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/Z2DKr4QT-HQ?si=dlCGkrUV9UFv_dxA&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </p>
-                    </li>
-
-                    <li>
-                        <p class="video-container">
-                            <iframe class="w-full h-full"  src="https://www.youtube.com/embed/TFEdsnEcQ-0?si=jXNTJ5EkZoiFMGWN&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </p>
-                    </li>
-
-                    <li>
-                        <p class="video-container">
-                            <iframe class="w-full h-full"  src="https://www.youtube.com/embed/TpGP-qHyFSQ?si=7Jzy6T5WBwK0WecA&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </p>
-                    </li>
-
-                    <li>
-                        <p class="video-container">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/UC8pN5JNcgk?si=R0yxveb3tzMFjVov&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </p>
-                    </li>
-
-                    <li>
-                        <p class="video-container">
-                            <iframe class="w-full h-full"  src="https://www.youtube.com/embed/zdXtzIg8e1A?si=od6nEdVP3Wvko7mH&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </p>
-                    </li>
-                    
-        
-                    <li>
-                        <p>
-                            <video controls preload>
-                            <source src="" />
-                            </video> 
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <video controls preload>
-                            <source src="" />
-                            </video> 
-                        </p>
-                    </li>
-                </ul>
-                
-                <div class="navigation"> 
-                    <div>
-                        <label for="slides_1"></label>
-                        <label for="slides_2"></label>
-                        <label for="slides_3"></label>
-                        <label for="slides_4"></label>
-                        <label for="slides_5"></label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <div class="slider-wrapper max-w-full overflow-hidden">
         <section class="videoSlider_1 mb-12">
             <div  class="flex h-full w-full justify-center items-center">
@@ -334,6 +280,7 @@
             </div>
         </section>
     </div>
+
     <section id="cta">
         <div class="flex flex-col items-center justify-center">
             <div class="flex-col text-center mx-auto space-y-4 md:space-x-5 lg:space-y-6">
@@ -356,10 +303,10 @@
                     <div class="flex flex-col items-start w-full xl:w-1/2 xl:mx-auto">
                         <label for="email" class="mb-2 text-gray-500 text-lg md:text-2xl">Email Address:</label>
                         <div id="emailCta" class="flex items-center w-full">
-                            <input type="email" id="email" placeholder="harry@potter.com" class="px-4 py-2 border rounded-lg w-full mr-4">
+                            <input id="emailAddress" type="email" id="email" placeholder="harry@potter.com" class="px-4 py-2 border rounded-lg w-full mr-4">
                             <div id="GetNotified" class=" w-full mx-6">
                                 <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center text-white py-2 px-4">
-                                    <p class="px-1 text:xl lg:text-2xl">Get Notified</p>
+                                    <button onclick="submitContactEmail()" class="px-1 text:xl lg:text-2xl">Get Notified</button>
                                     <div class="pr-1 md:pr-2 ml-4">
                                         <img
                                             class="relative w-[24xp] h-[24px] block"
