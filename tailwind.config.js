@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        "grotesk": ['"Familjen+Grotesk"', 'sans-serif'],
         "qs": ['Quicksand', 'sans-serif'],
-        "grotesk": ['Familjen+Grotesk', 'sans-serif'],
         "poppins": ['Poppins', 'sans-serif']
       },
       colors: {
