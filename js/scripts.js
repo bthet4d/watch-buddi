@@ -32,4 +32,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateCountdown();
 
+    const splide = new Splide('.splide', {
+        autoplay: true, 
+        rewind: true, 
+        pauseOnHover: true, 
+        pauseOnFocus: true, 
+        width: '700px', 
+        height: '348px', 
+        video: {
+            loop: false, 
+            host: 'https://www.youtube-nocookie.com',
+            playerOptions: {
+                youtube: {
+                    fs: 0
+                }
+            }
+        }
+    });
+    splide.mount( window.splide.Extensions );
+
+    var Autoplay = splide.Components.Autoplay;
+
+    splide.on('video:play', function() {
+        Autoplay.pause();
+    });
+
+    splide.on('video:ended', function() {
+        Autoplay.play();
+    });
 });

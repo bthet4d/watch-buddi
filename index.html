@@ -9,13 +9,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300..700&display=swap" rel="stylesheet">
     <title>Watch buddi</title>
     <link rel="stylesheet" href="./css/output.css">
     <link rel="stylesheet" href="./css/slider.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css">
     <script>
         function submitContactEmail () {
         console.log ("Email address submitted.");
@@ -24,10 +25,12 @@
 
   </head>
   <body class="h-full w-full">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js"></script>
     <!-- Header with Logo -->
     <div id="header" class="Header w-full h-full bg-slate-50">
         <div class="Logo w-full p-4">
-            <img src="img/logos/buddi_transp_xs_cropped.png" alt="Watch Buddi" class="block" />
+            <img id="header-logo" src="img/logos/buddi_final_alphapng.png" alt="Watch Buddi" class="block" />
         </div>
     </div>
 
@@ -42,8 +45,8 @@
                 <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/50 flex flex-col justify-end">
                     <div id="heroOverlay" class="flex-col font-qs text-start text-white p-4">
 
-                        <p class="w-full font-grotesk text-lg font-bold">Fetching content for pet people.
-                        </p>
+                        <h1 class="w-full font-qs text-lg font-bold">Fetching content for pet people.
+                        </h1>
             
                         <div class="w-full font-qs my-4 text-sm">
                             <p class="w-full">Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
@@ -53,7 +56,7 @@
                         <div class="flex items-center">
                             <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center py-1 text-white px-4">
                                 <button class="px-2 text-sm">
-                                    <a href="#emailAddress" class="cursor-pointer flex items-center">Get Notified
+                                    <a href="#typeform" class="cursor-pointer flex items-center font-qs">Get Notified
                                         <div class="pl-1">
                                             <img
                                                 class="relative w-[16px] h-[169x] block"
@@ -76,7 +79,7 @@
                 <!-- Custom Overlay for Medium Screens -->
                 <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/50 flex flex-col justify-center">
                     <div id="heroOverlay" class="flex-col h-auto font-qs text-start text-white p-4 ml-12 space-y-8">
-                        <p class="w-full font-grotesk font-bold text-2xl">Fetching content for pet people.</p>
+                        <h1 class="w-full font-qs font-bold text-2xl">Fetching content for pet people.</h1>
 
                         <div class="w-full font-qs my-4 text-lg">
                             <p class="w-full">Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
@@ -86,7 +89,7 @@
                         <div class="flex items-center">
                             <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center py-1 text-white px-4">
                                 <button class="px-2 text-lg flex items-center">
-                                    <a href="#emailAddress" class="cursor-pointer flex items-center">Get Notified
+                                    <a href="#typeform" class="cursor-pointer flex items-center font-qs">Get Notified
                                         <div class="pl-2">
                                             <img
                                                 class="relative w-[16px] h-[16px] block"
@@ -104,22 +107,22 @@
         
             <!-- Large Screens -->
             <div class="relative hidden lg:block">
-                <img class="object-cover bg-cover hidden lg:block" src="./img/backgrounds/cropped/TV_family_large.png" alt="Small Screen Image">
+                <img class="object-cover bg-cover hidden lg:block w-full" src="./img/backgrounds/cropped/TV_family_large.png" alt="Small Screen Image">
                 <!-- Custom Overlay for Large Screens -->
                 <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/50 flex flex-col justify-center">
                     <div id="heroOverlay" class="flex-col w-5/6 h-auto font-qs text-start text-white p-4 ml-12 space-y-16">
-                        <p class="w-full font-grotesk font-bold text-5xl xl:text-7xl">Fetching content for pet people.
-                        </p>
+                        <h1 class="w-full font-qs font-bold text-5xl xl:text-7xl">Fetching content for pet people.
+                        </h1>
 
                         <div class="xl:w-1/2 font-qs my-4">
-                            <p class="w-full text-3xl font-bold">Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
+                            <p class="w-full text-3xl">Stop endlessly scrolling and let buddi fetch the best entertaining and family-friendly movies and TV shows for pet people of all ages
                             </p>
                         </div>
             
                         <div class="flex items-center">
                             <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center py-1 text-white px-4">
                                 <button class="flex px-4 text-xl items-center">
-                                    <a href="#emailAddress" class="cursor-pointer flex items-center">Get Notified
+                                    <a href="#typeform" class="cursor-pointer flex items-center font-qs">Get Notified
                                         <div class="pl-4">
                                             <img
                                                 class="relative w-[24px] h-[24px] block"
@@ -193,137 +196,69 @@
         </div>
     </section>
     <section id="question">
-        <div class="bg-white py-4 my-12 mx-8">
+        <div class="bg-black py-12 px-8">
             <div class="flex flex-col w-full justify-center items-center">
-                <h2 class="font-grotesk font-semibold text-2xl md:text-3xl lg:text-4xl">Wanna see what buddi is fetching for you? Check it out!</h2>
+                <h2 class="font-qs font-bold text-3xl md:text-4xl lg:text-5xl text-slate-50">Wanna see what buddi is fetching for you? Check it out!</h2>
             </div>
         </div>
     </section>
-    <div class="slider-wrapper max-w-full overflow-hidden">
-        <section class="videoSlider_1 mb-12">
-            <div  class="flex h-full w-full justify-center items-center">
-                <div class="csslider infinity " id="slider1">
-                    <input type="radio" name="slides" checked="checked" id="slides_1"/>
-                    <input type="radio" name="slides" id="slides_2"/>
-                    <input type="radio" name="slides" id="slides_3"/>
-                    <input type="radio" name="slides" id="slides_4"/>
-                    <input type="radio" name="slides" id="slides_5"/>
-                    <ul class="w-full h-auto">
-                        
-                        <li class="w-full flex items-center justify-center">
-                            <div class="w-full flex items-center justify-center">
-                                
-                                <a href="https://www.youtube.com/embed/Z2DKr4QT-HQ?si=dlCGkrUV9UFv_dxA" class="scroll snap-center mx-2 flex items-center justify-center" target="_blank">
-                                    <img src="img/thumbnails/large/blackBear.png" alt="Black Bear" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                                </a>
-                            </div>
-                        </li>
-    
-                        <li class="w-full flex items-center justify-center">
-                            <div class="scroll snap-center mx-2 flex items-center">
-                                <a href="https://www.youtube.com/embed/Z2DKr4QT-HQ?si=dlCGkrUV9UFv_dxA" class="scroll snap-center mx-2 flex items-center justify-center" target="_blank">
-                                    <img src="img/thumbnails/large/kitty_911.jpg" alt="Kitty 911" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                                </a>
-                            </div>
-                        </li>
-    
-                        <li class="w-full flex items-center justify-center">
-                            <div class="scroll snap-center mx-2 flex items-center">"
-                                <a href="https://www.youtube.com/embed/Z2DKr4QT-HQ?si=dlCGkrUV9UFv_dxA" class="scroll snap-center mx-2 flex items-center justify-center" target="_blank">
-                                    <img src="img/thumbnails/large/pick_a_puppy.jpg" alt="Pick A Puppy" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                                </a>
-                            </div>
-                        </li>
-    
-                        <li class="w-full flex items-center justify-center">
-                            <div class="scroll snap-center mx-2 flex items-center">"
-                                <a href="https://www.youtube.com/embed/Z2DKr4QT-HQ?si=dlCGkrUV9UFv_dxA" class="scroll snap-center mx-2 flex items-center justify-center" target="_blank">
-                                    <img src="./img/thumbnails/large/petHeroes.jpg" alt="Pet Heroes" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                                </a>
-                            </div>
-                        </li>
-    
-                        <li class="w-full flex items-center justify-center">
-                            <div class="scroll mx-2 flex items-center">"
-                                <a href="https://www.youtube.com/embed/Z2DKr4QT-HQ?si=dlCGkrUV9UFv_dxA" class="scroll snap-center mx-2 flex items-center justify-center" target="_blank">
-                                    <img src="./img/thumbnails/large/er_vets.jpg" alt="ER Vets" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <p>
-                                <video controls preload>
-                                <source src="" />
-                                </video> 
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <video controls preload>
-                                <source src="" />
-                                </video> 
-                            </p>
-                        </li>
-                    </ul>
-                    
-                    <div class="navigation flex w-full mx-auto items-center justify-center"> 
-                        <div class="flex justify-center items-center">
-                            <label for="slides_1"></label>
-                            <label for="slides_2"></label>
-                            <label for="slides_3"></label>
-                            <label for="slides_4"></label>
-                            <label for="slides_5"></label>
+    <div class="py-12 bg-black">
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=TFEdsnEcQ-0">
+                        <div class="splide__slide__container">
+                            <img class="slider-thumbnail" src="./img/thumbnails/large/kitty_911.jpg" alt="Kitty 911" />
                         </div>
-                    </div>
-                </div>
+                    </li>
+                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=TpGP-qHyFSQ">
+                        <div class="splide__slide__container">
+                            <img class="slider-thumbnail" src="./img/thumbnails/large/pick_a_puppy.jpg" alt="Pick A Puppy" />
+                        </div>
+                    </li>
+                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=UC8pN5JNcgk">
+                        <div class="splide__slide__container">
+                            <img class="slider-thumbnail" src="./img/thumbnails/large/petHeroes.jpg" alt="Pet Heroes" />
+                        </div>
+                    </li>
+                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=zdXtzIg8e1A">
+                        <div class="splide__slide__container">
+                            <img class="slider-thumbnail" src="./img/thumbnails/large/er_vets.jpg" alt="ER Vets" />
+                        </div>
+                    </li>
+                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=Z2DKr4QT-HQ">
+                        <div class="splide__slide__container">
+                            <img class="slider-thumbnail" src="./img/thumbnails/large/blackBear_cropped.png" alt="Black Bear" />
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </div>
     </div>
-
     <section id="cta">
         <div class="flex flex-col items-center justify-center">
             <div class="flex-col text-center mx-auto space-y-4 md:space-x-5 lg:space-y-6">
-                <div class="flex text-center justify-center mx-auto">
-                    <img src="img/logos/buddi_transp_small_cropped.png" alt="Watch Buddi" class="sm:block hidden " />
-                    <img src="img/logos/buddi_transp_xs_cropped.png" alt="Watch Buddi" class="block sm:hidden " />
+                <div class="flex text-center justify-center mx-auto py-9">
+                    <img src="img/logos/buddi_transp_small_cropped.png" alt="Watch Buddi" class="sm:block hidden " id="sm-logo" />
+                    <img src="img/logos/buddi_transp_xs_cropped.png" alt="Watch Buddi" class="block sm:hidden " id="xs-logo" />
                 </div>
         
-                <div class="flex text-center justify-center items-center mx-1">
-                    <h1 class="font-grotesk font-semibold text-2xl md:text-4xl lg:text-7xl md:tracking-wide">Fetching content for pet people.</h1>
+                <div class="flex text-center justify-center items-center mx-1 p-4">
+                    <h1 class="font-qs font-bold text-2xl md:text-4xl lg:text-7xl md:tracking-wide">Fetching content for pet people.</h1>
                 </div>
-                <div class="flex w-full">
-                    <p class="flex font-ws text-xl md:text-2xl lg:text-3xl xl:text-4xl p-2 mx-auto w-3/4">
+                <div class="flex w-full p-4">
+                    <p class="font-qs flex font-ws text-xl md:text-2xl lg:text-3xl xl:text-4xl p-2 mx-auto w-3/4">
                         Sign up for a newsletter from buddi for exclusive content, discounts, and updates about the newest one-stop, 
                         personalized app for people who love pets.
                     </p>
                 </div>
-        
-                <div class="flex w-full items-center justify-center p-4">
-                    <div class="flex flex-col items-start w-full xl:w-1/2 xl:mx-auto">
-                        <label for="email" class="mb-2 text-gray-500 text-lg md:text-2xl">Email Address:</label>
-                        <div id="emailCta" class="flex items-center w-full">
-                            <input id="emailAddress" type="email" id="email" placeholder="harry@potter.com" class="px-4 py-2 border rounded-lg w-full mr-4">
-                            <div id="GetNotified" class=" w-full mx-6">
-                                <div class="GetNotified bg-orange-700 rounded-xl flex justify-center items-center text-white py-2 px-4">
-                                    <button onclick="submitContactEmail()" class="px-1 text:xl lg:text-2xl">Get Notified</button>
-                                    <div class="pr-1 md:pr-2 ml-4">
-                                        <img
-                                            class="relative w-[24xp] h-[24px] block"
-                                            alt="Arrow circle right"
-                                            src="./img/arrow-circle-right-1.png"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="typeform" data-tf-live="01HKZ92EYKB83C5A03ZFK9NHJR"></div><script src="//embed.typeform.com/next/embed.js"></script>
             </div>
         </div>
     </section>
 
     <section id="social-media">
-        <div class="bg-white flex justify-center items-center">
+        <div class="bg-white flex justify-center items-center py-12">
             <div class="SocialMedia w-96 h-32 justify-center items-center gap-7 inline-flex">
                 <div class="Facebook w-12 h-12 justify-center items-center flex">
                 <div class=" w-12 h-12 relative flex-col justify-start items-start flex">
@@ -370,91 +305,16 @@
             </div>
         </div>
     </section>
-
-    <div class="slider-wrapper max-w-full overflow-hidden">
-        <section class="videoSlider_b mb-12">
-            <div  class="flex h-full w-full justify-center items-center">
-                <div class="csslider infinity " id="slider2">
-                    <input type="radio" name="slides2" checked="checked" id="slides_6"/>
-                    <input type="radio" name="slides2" id="slides_7"/>
-                    <input type="radio" name="slides2" id="slides_8"/>
-                    <input type="radio" name="slides2" id="slides_9"/>
-                    <input type="radio" name="slides2" id="slides_10"/>
-                    <ul class="w-full">
-                        
-                        <li class="w-full flex items-center justify-center">
-                            <div class="w-full flex items-center justify-center">
-                                <a href="https://www.youtube.com/embed/Q4GNWigEUXg?si=To-KeBrR6rfr46QV" class="scroll snap-center w-full mx-auto flex items-center justify-center" target="_blank">
-                                    <img src="./img/thumbnails/ratio-16-9.png" alt="ER Vets" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                                </a>
-                            </div>
-                        </li>
-    
-                        <li class="w-full flex items-center justify-center">
-                            <div class="scroll snap-center mx-2 flex items-center justify-center">
-                                <a href="https://www.youtube.com/embed/Q4GNWigEUXg?si=To-KeBrR6rfr46QV" class="scroll snap-center mx-2 flex items-center justify-center" target="_blank">
-                                    <img src="./img/thumbnails/ratio-16-9.png" alt="ER Vets" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                                </a>
-                            </div>
-                        </li>
-    
-                        <li class="w-full flex items-center justify-center">
-                            <div class="scroll snap-center mx-2 flex items-center  justify-center">
-                                <a href="https://www.youtube.com/embed/Q4GNWigEUXg?si=To-KeBrR6rfr46QV" class="scroll snap-center mx-2 flex items-center justify-center" target="_blank">
-                                    <img src="./img/thumbnails/ratio-16-9.png" alt="ER Vets" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                                </a>
-                            </div>
-                        </li>
-    
-                        <li class="w-full flex items-center justify-center">
-                            <div class="scroll snap-center mx-2 flex items-center  justify-center">
-                                <a href="https://www.youtube.com/embed/Q4GNWigEUXg?si=To-KeBrR6rfr46QV" class="scroll snap-center mx-2 flex items-center justify-center" target="_blank">
-                                    <img src="./img/thumbnails/ratio-16-9.png" alt="ER Vets" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                                </a>
-                            </div>
-                        </li>
-    
-                        <li class="w-full flex items-center justify-center">
-                            <div class="scroll mx-2 flex items-center  justify-center">
-                                <a href="https://www.youtube.com/embed/Q4GNWigEUXg?si=To-KeBrR6rfr46QV" class="scroll snap-center mx-2 flex items-center justify-center" target="_blank">
-                                    <img src="./img/thumbnails/ratio-16-9.png" alt="ER Vets" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" />
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <p>
-                                <video controls preload>
-                                <source src="" />
-                                </video> 
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <video controls preload>
-                                <source src="" />
-                                </video> 
-                            </p>
-                        </li>
-                    </ul>
-                    
-                    <div class="navigation flex w-full mx-auto items-center justify-center"> 
-                        <div class="flex justify-center items-center">
-                            <label for="slides_6"></label>
-                            <label for="slides_7"></label>
-                            <label for="slides_8"></label>
-                            <label for="slides_9"></label>
-                            <label for="slides_10"></label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="w-full">
+        <div class="content-center flex justify-center">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/watchbuddi/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:900px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/watchbuddi/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/watchbuddi/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">Buddi</a> (@<a href="https://www.instagram.com/watchbuddi/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">watchbuddi</a>) • Instagram photos and videos</p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+        </div>
     </div>
-    <div class="flex text-center justify-center text-black font-grotesk w-full bg-slate-50">
+    <div class="flex text-center justify-center text-black font-qs w-full bg-slate-50">
         <footer class="flex flex-col text-center justify-center inset-x-0 bottom-0 p-2 md:p-4 lg:p-8 w-full text-sm lg:text-lg ">
             <div class="w-full"> 
                 <p class="my-2 text-blue-950 font-semibold">
-                    Copyright ©2024 Unified Media Development. All Rights Reserved. For any business inquiries, please email contact@unifiedd.media
+                    ©2024 Unified Development Media, LLC. All Rights Reserved.
                 </p>
             </div>
         </footer>
